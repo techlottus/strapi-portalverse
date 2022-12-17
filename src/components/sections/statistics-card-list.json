@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_statistics_card_lists",
+  "info": {
+    "displayName": "statisticsCardList",
+    "icon": "bars"
+  },
+  "options": {},
+  "attributes": {
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.statistics-card",
+      "required": true
+    }
+  }
+}

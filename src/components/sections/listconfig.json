@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_sections_listconfigs",
+  "info": {
+    "displayName": "listconfig",
+    "icon": "tasks",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "maxentries": {
+      "default": 12,
+      "required": true,
+      "type": "integer"
+    },
+    "relatesto": {
+      "type": "enumeration",
+      "enum": [
+        "blogentries",
+        "pages"
+      ]
+    },
+    "sortdate": {
+      "type": "enumeration",
+      "enum": [
+        "latest",
+        "earliest"
+      ],
+      "default": "latest"
+    }
+  }
+}

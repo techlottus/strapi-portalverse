@@ -4,15 +4,35 @@
   "info": {
     "singularName": "collection-test",
     "pluralName": "collection-tests",
-    "displayName": "collection test"
+    "displayName": "Blog post",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "poscollection": {
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "related_posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::collection-test.collection-test"
+    },
+    "body": {
+      "type": "richtext",
+      "required": true
+    },
+    "title": {
       "type": "string"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     }
   }
 }

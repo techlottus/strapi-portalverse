@@ -2,12 +2,12 @@ module.exports = {
   apps: [
     {
       name: 'test-1',
-      cwd: env('PATH'),
+      cwd: '/home/alanllamas/Sites/strapi-multitenancy',
       script: 'yarn',
       args: 'develop',
       env: {
         NODE_ENV: 'test-1',
-        HOST_PORT_TEST1: env('PORT1'),
+        HOST_PORT_TEST1: '1338',
         DATABASE_HOST_PRODUCTION: 'localhost', 
         DATABASE_PORT_PRODUCTION: 5432,
         DATABASE_USER_PRODUCTION: 'postgres',
@@ -19,12 +19,12 @@ module.exports = {
     },
     {
       name: 'test-2',
-      cwd: env('path'),
+      cwd: '/home/alanllamas/Sites/strapi-multitenancy',
       script: 'yarn',
       args: 'develop',
       env: {
         NODE_ENV: 'test-2',
-        HOST_PORT_TEST2: env('PORT2'),
+        HOST_PORT_TEST2: '1339',
         DATABASE_HOST_PRODUCTION: 'localhost',
         DATABASE_PORT_PRODUCTION: 5432,
         DATABASE_USER_PRODUCTION: 'postgres', 
