@@ -2,7 +2,7 @@ module.exports = {
   apps: [
     {
       name: 'test-1',
-      cwd: '/home/alanllamas/Sites/strapi-multitenancy',
+      cwd: '/devtechlottus/cmsuane/multitenant-strapi',
       script: 'yarn',
       args: 'develop',
       env: {
@@ -19,7 +19,7 @@ module.exports = {
     },
     {
       name: 'test-2',
-      cwd: '/home/alanllamas/Sites/strapi-multitenancy',
+      cwd: '/devtechlottus/cmsuane/multitenant-strapi',
       script: 'yarn',
       args: 'develop',
       env: {

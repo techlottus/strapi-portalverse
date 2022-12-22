@@ -25,13 +25,16 @@
         "sections.listconfig",
         "sections.offer",
         "sections.banner",
-        "shared.meta-social",
-        "shared.seo",
         "sections.entryconfig",
         "sections.statistics-card-list",
         "sections.form-video"
       ],
       "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     }
   }
 }
