@@ -8,7 +8,7 @@ module.exports = ({
       name: env.NAME1,
       cwd: env.CWD,
       script: 'yarn',
-      args: 'start',
+      args: 'str:start',
       env: {
         NODE_ENV: env.NAME1,
         HOST_PORT_TEST1: env.HOST_PORT_TEST1,
@@ -25,7 +25,7 @@ module.exports = ({
       name: env.NAME2,
       cwd: env.CWD,
       script: 'yarn',
-      args: 'start',
+      args: 'str:start',
       env: {
         NODE_ENV: env.NAME2,
         HOST_PORT_TEST2: env.HOST_PORT_TEST2,

@@ -4,9 +4,12 @@
   "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
-    "develop": "strapi develop",
-    "start": "strapi start",
-    "build": "strapi build",
+    "develop": "pm2 start ecosystem.js",
+    "start": "pm2 start ecosystem.js",
+    "build": "pm2 start ecosystem.js",
+    "str:develop": "strapi develop",
+    "str:start": "strapi start",
+    "str:build": "strapi build",
     "strapi": "strapi"
   },
   "devDependencies": {},
