@@ -18,7 +18,7 @@ module.exports = ({
         DATABASE_PASS_PRODUCTION: env.DATABASE_PASS_PRODUCTION,
         DATABASE_NAME_TEST1: env.DATABASE_NAME_TEST1,
         ADMIN_JWT_SECRET: env.ADMIN_JWT_SECRET,
-        DOMAIN_URL: env.DOMAIN_URL
+        DOMAIN_URL: env.DOMAIN_URL1
       }
     },
     {
@@ -35,7 +35,7 @@ module.exports = ({
         DATABASE_PASS_PRODUCTION: env.DATABASE_PASS_PRODUCTION,
         DATABASE_NAME_TEST2: env.DATABASE_NAME_TEST2,
         ADMIN_JWT_SECRET:  env.ADMIN_JWT_SECRET,
-        DOMAIN_URL: env.DOMAIN_URL,
+        DOMAIN_URL: env.DOMAIN_URL2,
       }
     }
   ]
