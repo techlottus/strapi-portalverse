@@ -1,38 +1,42 @@
-module.exports = {
+const env = require('dotenv').config().parsed
+
+console.log(env);
+
+module.exports = ({
   apps: [
     {
-      name: 'test-1',
-      cwd: '/devtechlottus/cmsuane/multitenant-strapi',
+      name: env.NAME1,
+      cwd: env.CWD,
       script: 'yarn',
       args: 'develop',
       env: {
-        NODE_ENV: 'test-1',
-        HOST_PORT_TEST1: '1338',
-        DATABASE_HOST_PRODUCTION: 'localhost', 
-        DATABASE_PORT_PRODUCTION: 5432,
-        DATABASE_USER_PRODUCTION: 'postgres',
-        DATABASE_PASS_PRODUCTION: 'pedrito',
-        DATABASE_NAME_TEST1: 'test1',
-        ADMIN_JWT_SECRET :'+1L+BggFnffy228YrZSIvg==',
-        DOMAIN_URL: 'localhost'
+        NODE_ENV: env.NAME1,
+        HOST_PORT_TEST1: env.HOST_PORT_TEST1,
+        DATABASE_HOST_PRODUCTION: env.DATABASE_HOST_PRODUCTION, 
+        DATABASE_PORT_PRODUCTION: env.DATABASE_PORT_PRODUCTION,
+        DATABASE_USER_PRODUCTION: env.DATABASE_USER_PRODUCTION,
+        DATABASE_PASS_PRODUCTION: env.DATABASE_PASS_PRODUCTION,
+        DATABASE_NAME_TEST1: env.DATABASE_NAME_TEST1,
+        ADMIN_JWT_SECRET: env.ADMIN_JWT_SECRET,
+        DOMAIN_URL: env.DOMAIN_URL
       }
     },
     {
-      name: 'test-2',
-      cwd: '/devtechlottus/cmsuane/multitenant-strapi',
+      name: env.NAME2,
+      cwd: env.CWD,
       script: 'yarn',
       args: 'develop',
       env: {
-        NODE_ENV: 'test-2',
-        HOST_PORT_TEST2: '1339',
-        DATABASE_HOST_PRODUCTION: 'localhost',
-        DATABASE_PORT_PRODUCTION: 5432,
-        DATABASE_USER_PRODUCTION: 'postgres', 
-        DATABASE_PASS_PRODUCTION: 'pedrito',
-        DATABASE_NAME_TEST2: 'test2',
-        ADMIN_JWT_SECRET :'+1L+BggFnffy228YrZSIvg==',
-        DOMAIN_URL: 'localhost'
+        NODE_ENV: env.NAME2,
+        HOST_PORT_TEST2: env.HOST_PORT_TEST2,
+       DATABASE_HOST_PRODUCTION: env.DATABASE_HOST_PRODUCTION,
+        DATABASE_PORT_PRODUCTION: env.DATABASE_PORT_PRODUCTION,
+        DATABASE_USER_PRODUCTION: env.DATABASE_USER_PRODUCTION, 
+        DATABASE_PASS_PRODUCTION: env.DATABASE_PASS_PRODUCTION,
+        DATABASE_NAME_TEST2: env.DATABASE_NAME_TEST2,
+        ADMIN_JWT_SECRET:  env.ADMIN_JWT_SECRET,
+        DOMAIN_URL: env.DOMAIN_URL,
       }
     }
   ]
-};
+});
