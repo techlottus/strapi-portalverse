@@ -1,14 +1,17 @@
 
-module.exports = ({ env }) => ({
-  connection: {
-    client: 'postgres',
+module.exports = ({ env }) => {
+  console.log('db test1 env: ', env);
+  return ({
     connection: {
-      host: env('DATABASE_HOST_PRODUCTION'),
-      port: env('DATABASE_PORT_PRODUCTION'),
-      database: 'test1',
-      user: env('DATABASE_USER_PRODUCTION'),
-      password: env('DATABASE_PASS_PRODUCTION'),
-      ssl: false
+      client: 'postgres',
+      connection: {
+        host: env('DATABASE_HOST_PRODUCTION1'),
+        port: env('DATABASE_PORT_PRODUCTION1'),
+        database: env('DATABASE_NAME_TEST1'),
+        user: env('DATABASE_USER_PRODUCTION1'),
+        password: env('DATABASE_PASS_PRODUCTION1'),
+        ssl: false
+      },
     },
-  },
-});
+  })
+};
