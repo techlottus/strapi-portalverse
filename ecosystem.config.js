@@ -1,8 +1,5 @@
 const env = require('dotenv').config().parsed
 
-console.log('env: ', env);
-console.log('process.env: ', process.env);
-
 module.exports = ({
   apps: [
     {
