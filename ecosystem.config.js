@@ -7,7 +7,6 @@ module.exports = ({
   apps: [
     {
       name: env.NAME1,
-      cwd: env.CWD,
       script: env.SCRIPT,
       args: env.ARGS,
       env: {
@@ -24,7 +23,6 @@ module.exports = ({
     },
     {
       name: env.NAME2,
-      cwd: env.CWD,
       script: env.SCRIPT,
       args: env.ARGS,
       env: {
