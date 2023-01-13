@@ -10,7 +10,7 @@ module.exports = ({ env }) => {
         database: env('DATABASE_NAME_TEST2'),
         user: env('DATABASE_USER_PRODUCTION'),
         password: env('DATABASE_PASS_PRODUCTION'),
-        ssl: false
+        ssl: true
       },
     },
   });
