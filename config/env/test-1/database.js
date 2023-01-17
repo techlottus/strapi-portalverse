@@ -1,5 +1,6 @@
 
 module.exports = ({ env }) => {
+  console.log('database1 :', env);
   return ({
     connection: {
       client: 'postgres',

@@ -1,4 +1,5 @@
 const env = require('dotenv').config().parsed
+console.log('ecosystem: ', env);
 
 module.exports = ({
   apps: [
