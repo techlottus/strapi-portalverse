@@ -1,5 +1,12 @@
 module.exports = ({ env }) => {
-  console.log('database3 :', env);
+  console.group('database3 :');
+    console.log('DATABASE_HOST_PRODUCTION: ', env('DATABASE_HOST_PRODUCTION'));
+    console.log('DATABASE_PORT_PRODUCTION: ', env('DATABASE_PORT_PRODUCTION'));
+    console.log('DATABASE_NAME: ', env('DATABASE_NAME'));
+    console.log('DATABASE_USER_PRODUCTION: ', env('DATABASE_USER_PRODUCTION'));
+    console.log('DATABASE_PASS_PRODUCTION: ', env('DATABASE_PASS_PRODUCTION'));
+    console.log('DATABASE_SSL: ', env('DATABASE_SSL') === 'true');
+  console.groupEnd();
 
   return ({
     connection: {
