@@ -86,6 +86,11 @@
       },
       "type": "uid",
       "targetField": "title"
+    },
+    "related_posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-post.blog-post"
     }
   }
 }
