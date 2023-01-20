@@ -25,6 +25,12 @@
       "type": "string",
       "unique": true,
       "required": true
+    },
+    "blog_posts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::blog-post.blog-post",
+      "mappedBy": "categories"
     }
   }
 }
