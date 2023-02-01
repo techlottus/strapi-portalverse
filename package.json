@@ -11,7 +11,6 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "@notum-cz/strapi-plugin-content-versioning": "^0.4.7",
     "@retikolo/drag-drop-content-types": "^1.2.1",
     "@strapi/plugin-color-picker": "^4.5.4",
     "@strapi/plugin-i18n": "4.5.3",
@@ -32,7 +31,7 @@
     "uuid": "686f8fb0-8c65-4cae-95fd-d1c157d575e1"
   },
   "engines": {
-    "node": ">=14.19.1 <=18.x.x",
+    "node": ">=16.x.x <=18.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
