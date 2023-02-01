@@ -19,14 +19,16 @@
       "type": "enumeration",
       "enum": [
         "blogentries",
-        "pages"
+        "pages",
+        "faq"
       ]
     },
     "sortdate": {
       "type": "enumeration",
       "enum": [
         "latest",
-        "earliest"
+        "earliest",
+        "all"
       ],
       "default": "latest"
     }

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_sections_blog_post_lists",
+  "info": {
+    "displayName": "blog_post_list"
+  },
+  "options": {},
+  "attributes": {
+    "blog_posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::blog-post.blog-post"
+    }
+  }
+}

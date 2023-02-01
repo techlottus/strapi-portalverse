@@ -27,7 +27,10 @@
         "sections.banner",
         "sections.entryconfig",
         "sections.statistics-card-list",
-        "sections.form-video"
+        "sections.form-video",
+        "sections.blog-post-list",
+        "sections.faq-section",
+        "sections.statistics-card"
       ],
       "required": true
     },
