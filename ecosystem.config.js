@@ -16,7 +16,8 @@ module.exports = ({
         DATABASE_NAME: env.DATABASE_NAME_TEST1,
         ADMIN_JWT_SECRET: env.ADMIN_JWT_SECRET,
         DOMAIN_URL: env.DOMAIN_URL1,
-        DATABASE_SSL: env.DATABASE_SSL
+        DATABASE_SSL: env.DATABASE_SSL,
+        AWS_FOLDER: env.AWS_FOLDER1,
       }
     }
   ]
