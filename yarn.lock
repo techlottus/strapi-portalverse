@@ -1429,15 +1429,6 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
-"@notum-cz/strapi-plugin-content-versioning@^0.4.7":
-  version "0.4.7"
-  resolved "https://registry.yarnpkg.com/@notum-cz/strapi-plugin-content-versioning/-/strapi-plugin-content-versioning-0.4.7.tgz#9395920e76fb1c708b9625f66d351985c7b79a82"
-  integrity sha512-Hy5Uw/FWpdWJ1CmbLwCBfMZWB1wpZrhaIttT1yz8T7WNRaVpEgTXrv9xOT5XUTsTIA5kfKv1O1kWjfiBqKa4pg==
-  dependencies:
-    "@strapi/utils" "^4.0.0"
-    lodash "^4.17.21"
-    uuid "^8.3.2"
-
 "@open-draft/until@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@open-draft/until/-/until-1.0.3.tgz#db9cc719191a62e7d9200f6e7bab21c5b848adca"
@@ -2075,17 +2066,6 @@
   dependencies:
     "@sindresorhus/slugify" "1.1.0"
     date-fns "2.29.3"
-    http-errors "1.8.1"
-    lodash "4.17.21"
-    yup "0.32.9"
-
-"@strapi/utils@^4.0.0":
-  version "4.5.4"
-  resolved "https://registry.yarnpkg.com/@strapi/utils/-/utils-4.5.4.tgz#f601fb0d1feee8882a91eb90265137ce0614fa63"
-  integrity sha512-LtARhACDp//kJ5My+oQeuFYOCdtxP8BMwVHlqEf1jdT6GnAbqNNCrN85nevZ1mJuZ5BCkQjlwb1wWLGn2GHdDQ==
-  dependencies:
-    "@sindresorhus/slugify" "1.1.0"
-    date-fns "2.29.2"
     http-errors "1.8.1"
     lodash "4.17.21"
     yup "0.32.9"
@@ -2910,8 +2890,8 @@ available-typed-arrays@^1.0.5:
 
 aws-sdk@2.1287.0:
   version "2.1287.0"
-  resolved "https://pkgs.dev.azure.com/lottusAdmin/CampusVirtual/_packaging/npm-lottus/npm/registry/aws-sdk/-/aws-sdk-2.1287.0.tgz#40296aadf34e7550e058f73f3363130d65ffb1c0"
-  integrity sha1-QClqrfNOdVDgWPc/M2MTDWX/scA=
+  resolved "https://registry.yarnpkg.com/aws-sdk/-/aws-sdk-2.1287.0.tgz#40296aadf34e7550e058f73f3363130d65ffb1c0"
+  integrity sha512-mtfDstUdFNn8FnBaXs2KAaQ0cgDIiwlqwC2UptUKWWrugjZHAoRacfD/6bnah1Kwhu43F9CDEe5QLHnQtymNkw==
   dependencies:
     buffer "4.9.2"
     events "1.1.1"
