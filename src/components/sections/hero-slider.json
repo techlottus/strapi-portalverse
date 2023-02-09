@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_sections_hero_sliders",
+  "info": {
+    "displayName": "hero slider"
+  },
+  "options": {},
+  "attributes": {
+    "slide": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.hero"
+    }
+  }
+}

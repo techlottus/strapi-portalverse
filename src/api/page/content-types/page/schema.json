@@ -30,7 +30,8 @@
         "sections.form-video",
         "sections.blog-post-list",
         "sections.faq-section",
-        "sections.statistics-card"
+        "sections.statistics-card",
+        "sections.hero-slider"
       ],
       "required": true
     },
