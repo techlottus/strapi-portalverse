@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modalities",
+  "info": {
+    "singularName": "modality",
+    "pluralName": "modalities",
+    "displayName": "Modality",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "label": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
