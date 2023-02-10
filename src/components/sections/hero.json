@@ -22,13 +22,6 @@
         "videos"
       ]
     },
-    "CTAtext": {
-      "type": "string",
-      "required": false
-    },
-    "ctaURL": {
-      "type": "string"
-    },
     "overlay": {
       "type": "enumeration",
       "enum": [
@@ -36,6 +29,15 @@
         "white",
         "black"
       ]
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaUrl": {
+      "type": "string"
     }
   }
 }

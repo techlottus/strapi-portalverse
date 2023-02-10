@@ -15,7 +15,7 @@
     "title": {
       "type": "string"
     },
-    "type": {
+    "slug": {
       "type": "string"
     },
     "sections": {
