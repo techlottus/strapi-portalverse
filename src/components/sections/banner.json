@@ -2,7 +2,8 @@
   "collectionName": "components_sections_banners",
   "info": {
     "displayName": "banner",
-    "icon": "audio-description"
+    "icon": "audio-description",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -15,18 +16,27 @@
     "ctaText": {
       "type": "string"
     },
-    "ctaURL": {
+    "ctaUrl": {
       "type": "string"
     },
-    "background": {
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "overlay": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "white",
+        "black"
+      ]
     }
   }
 }

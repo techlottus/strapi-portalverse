@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "blog_entry_pages",
+  "info": {
+    "singularName": "blog-entry-page",
+    "pluralName": "blog-entry-pages",
+    "displayName": "Blog Entry Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "blogEntryConfig": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.entryconfig"
+    },
+    "contactBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.banner"
+    },
+    "podcastBanner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.banner"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.seo"
+    }
+  }
+}

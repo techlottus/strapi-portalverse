@@ -19,7 +19,7 @@
     "ctaText": {
       "type": "string"
     },
-    "ctaLink": {
+    "ctaUrl": {
       "type": "text"
     }
   }

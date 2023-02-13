@@ -2,17 +2,42 @@
   "collectionName": "components_sections_statistics_cards",
   "info": {
     "displayName": "statisticsCard",
-    "icon": "address-book"
+    "icon": "address-book",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "statistic": {
-      "type": "string"
-    },
     "title": {
       "type": "string"
     },
     "body": {
+      "type": "string"
+    },
+    "maxNumber": {
+      "type": "integer"
+    },
+    "prefix": {
+      "type": "string"
+    },
+    "suffix": {
+      "type": "string"
+    },
+    "boxShadowColor": {
+      "type": "enumeration",
+      "enum": [
+        "blue-pastel-left",
+        "yellow-pastel-left",
+        "red-pastel-left",
+        "gray-pastel-left",
+        "blue-left",
+        "blue-pastel-right",
+        "yellow-pastel-right",
+        "red-pastel-right",
+        "gray-pastel-right",
+        "blue-right"
+      ]
+    },
+    "icon": {
       "type": "string"
     }
   }
