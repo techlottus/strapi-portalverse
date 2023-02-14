@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_sections_cards",
+  "collectionName": "components_sections_overlay_card_lists",
   "info": {
-    "displayName": "overlayCards",
+    "displayName": "overlayCardList",
     "description": ""
   },
   "options": {},
@@ -10,7 +10,6 @@
       "type": "text"
     },
     "overlayCards": {
-      "displayName": "overlayCard",
       "type": "component",
       "repeatable": true,
       "component": "sections.overlay-card"
