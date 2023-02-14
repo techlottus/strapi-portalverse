@@ -7,12 +7,6 @@
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "subtitle": {
-      "type": "string"
-    },
     "image": {
       "type": "media",
       "multiple": false,
@@ -22,6 +16,30 @@
         "videos"
       ]
     },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "textPosition": {
+      "type": "enumeration",
+      "enum": [
+        "center",
+        "center top",
+        "center bottom",
+        "left top",
+        "left center",
+        "left bottom",
+        "right top",
+        "right center",
+        "right bottom"
+      ],
+      "required": false
+    },
     "overlay": {
       "type": "enumeration",
       "enum": [
@@ -29,9 +47,6 @@
         "white",
         "black"
       ]
-    },
-    "content": {
-      "type": "richtext"
     },
     "ctaText": {
       "type": "string"

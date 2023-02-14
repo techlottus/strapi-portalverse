@@ -12,25 +12,38 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "blogEntryConfig": {
-      "type": "component",
-      "repeatable": false,
-      "component": "sections.entryconfig"
+    "title": {
+      "type": "string",
+      "required": true
     },
-    "contactBanner": {
-      "type": "component",
-      "repeatable": false,
-      "component": "sections.banner"
+    "slug": {
+      "type": "text",
+      "required": true,
+      "unique": true
     },
-    "podcastBanner": {
-      "type": "component",
-      "repeatable": false,
-      "component": "sections.banner"
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.banner",
+        "sections.blog-post-list",
+        "sections.cards",
+        "sections.entryconfig",
+        "sections.faq-section",
+        "sections.form-video",
+        "sections.hero-slider",
+        "sections.hero",
+        "sections.listconfig",
+        "sections.offer",
+        "sections.statistics-card-list",
+        "sections.statistics-card",
+        "sections.text-image"
+      ]
     },
     "seo": {
       "type": "component",
-      "repeatable": true,
-      "component": "shared.seo"
+      "repeatable": false,
+      "component": "shared.seo",
+      "required": true
     }
   }
 }
