@@ -16,48 +16,34 @@
       "type": "string",
       "required": true
     },
-    "offerItems": {
-      "type": "component",
-      "repeatable": false,
-      "component": "sections.offer"
-    },
-    "internationalizationBanner": {
-      "type": "component",
-      "repeatable": false,
-      "component": "sections.banner"
-    },
-    "statisticsCardList": {
-      "type": "component",
-      "repeatable": false,
-      "component": "sections.statistics-card-list"
-    },
-    "blogPostsListConfig": {
-      "type": "component",
-      "repeatable": false,
-      "component": "sections.listconfig"
-    },
-    "podcastBanner": {
-      "type": "component",
-      "repeatable": false,
-      "component": "sections.banner"
-    },
-    "contactFormVideo": {
-      "type": "component",
-      "repeatable": false,
-      "component": "sections.form-video"
-    },
     "slug": {
-      "type": "text"
+      "type": "text",
+      "required": true,
+      "unique": true
+    },
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.banner",
+        "sections.blog-post-list",
+        "sections.cards",
+        "sections.entryconfig",
+        "sections.faq-section",
+        "sections.form-video",
+        "sections.hero-slider",
+        "sections.hero",
+        "sections.listconfig",
+        "sections.offer",
+        "sections.statistics-card-list",
+        "sections.statistics-card",
+        "sections.text-image"
+      ]
     },
     "seo": {
       "type": "component",
       "repeatable": false,
-      "component": "shared.seo"
-    },
-    "heroSlider": {
-      "type": "component",
-      "repeatable": false,
-      "component": "sections.hero-slider"
+      "component": "shared.seo",
+      "required": true
     }
   }
 }
