@@ -36,7 +36,8 @@
         "sections.offer",
         "sections.statistics-card-list",
         "sections.statistics-card",
-        "sections.text-image"
+        "sections.text-image",
+        "sections.image-card-list"
       ]
     },
     "seo": {

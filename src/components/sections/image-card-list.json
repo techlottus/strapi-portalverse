@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_image_card_lists",
+  "info": {
+    "displayName": "imageCardList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "imageCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.image-card"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_sections_image_cards",
+  "info": {
+    "displayName": "imageCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "linkUrl": {
+      "type": "text"
+    },
+    "linkText": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "iconFirst": {
+      "type": "string"
+    },
+    "iconSecond": {
+      "type": "string"
+    }
+  }
+}
