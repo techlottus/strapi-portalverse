@@ -1,9 +1,16 @@
 {
   "collectionName": "components_sections_cards",
   "info": {
-    "displayName": "Cards",
+    "displayName": "overlayCards",
     "description": ""
   },
   "options": {},
-  "attributes": {}
+  "attributes": {
+    "overlayCards": {
+      "displayName": "overlayCard",
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.overlay-card"
+    }
+  }
 }
