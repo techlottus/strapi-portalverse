@@ -50,6 +50,14 @@
         "white",
         "black"
       ]
+    },
+    "contentVariant": {
+      "type": "enumeration",
+      "enum": [
+        "light",
+        "dark"
+      ],
+      "required": true
     }
   }
 }
