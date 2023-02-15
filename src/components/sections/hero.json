@@ -22,6 +22,12 @@
     "subtitle": {
       "type": "string"
     },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaUrl": {
+      "type": "string"
+    },
     "textPosition": {
       "type": "enumeration",
       "enum": [
@@ -44,12 +50,6 @@
         "white",
         "black"
       ]
-    },
-    "ctaText": {
-      "type": "string"
-    },
-    "ctaUrl": {
-      "type": "string"
     }
   }
 }
