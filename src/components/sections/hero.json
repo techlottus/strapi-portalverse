@@ -22,9 +22,6 @@
     "subtitle": {
       "type": "string"
     },
-    "content": {
-      "type": "text"
-    },
     "textPosition": {
       "type": "enumeration",
       "enum": [
