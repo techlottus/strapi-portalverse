@@ -13,7 +13,7 @@
     "subtitle": {
       "type": "string"
     },
-    "image": {
+    "desktopImage": {
       "type": "media",
       "multiple": false,
       "required": true,
@@ -21,6 +21,20 @@
         "images",
         "videos"
       ]
+    },
+    "tabletImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "mobileImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     },
     "CTAtext": {
       "type": "string",
