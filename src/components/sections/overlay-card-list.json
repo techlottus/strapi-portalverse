@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_overlay_card_lists",
+  "info": {
+    "displayName": "overlayCardList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "overlayCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.overlay-card"
+    }
+  }
+}
