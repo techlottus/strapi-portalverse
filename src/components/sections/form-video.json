@@ -35,6 +35,9 @@
     "videoTitle": {
       "type": "string"
     },
+    "videoHeight": {
+      "type": "integer"
+    },
     "youtubeUrl": {
       "type": "string"
     },
