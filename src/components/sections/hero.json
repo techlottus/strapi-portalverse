@@ -18,8 +18,7 @@
       "multiple": false,
       "required": true,
       "allowedTypes": [
-        "images",
-        "videos"
+        "images"
       ]
     },
     "tabletImage": {
@@ -36,12 +35,26 @@
       "type": "media",
       "multiple": false
     },
-    "CTAtext": {
-      "type": "string",
-      "required": false
-    },
-    "ctaURL": {
+    "ctaText": {
       "type": "string"
+    },
+    "ctaUrl": {
+      "type": "string"
+    },
+    "textPosition": {
+      "type": "enumeration",
+      "enum": [
+        "center",
+        "center top",
+        "center bottom",
+        "left top",
+        "left center",
+        "left bottom",
+        "right top",
+        "right center",
+        "right bottom"
+      ],
+      "required": true
     },
     "overlay": {
       "type": "enumeration",
@@ -50,6 +63,14 @@
         "white",
         "black"
       ]
+    },
+    "contentVariant": {
+      "type": "enumeration",
+      "enum": [
+        "light",
+        "dark"
+      ],
+      "required": true
     }
   }
 }

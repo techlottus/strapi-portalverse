@@ -2,7 +2,8 @@
   "collectionName": "components_sections_entryconfigs",
   "info": {
     "displayName": "entryconfig",
-    "icon": "apple-alt"
+    "icon": "apple-alt",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -14,6 +15,12 @@
       ],
       "default": "Blog entry",
       "required": true
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaUrl": {
+      "type": "text"
     }
   }
 }

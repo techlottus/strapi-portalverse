@@ -20,15 +20,15 @@
       "enum": [
         "blogentries",
         "pages",
-        "faq"
+        "faq",
+        "modalities"
       ]
     },
     "sortdate": {
       "type": "enumeration",
       "enum": [
         "latest",
-        "earliest",
-        "all"
+        "earliest"
       ],
       "default": "latest"
     }

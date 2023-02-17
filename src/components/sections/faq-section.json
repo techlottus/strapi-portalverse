@@ -22,10 +22,10 @@
         "list"
       ]
     },
-    "cta_text": {
+    "ctaText": {
       "type": "string"
     },
-    "cta_url": {
+    "ctaUrl": {
       "type": "string"
     }
   }
