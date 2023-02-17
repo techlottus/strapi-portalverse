@@ -22,8 +22,11 @@
     "subtitle": {
       "type": "string"
     },
-    "content": {
-      "type": "text"
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaUrl": {
+      "type": "string"
     },
     "textPosition": {
       "type": "enumeration",
@@ -38,7 +41,7 @@
         "right center",
         "right bottom"
       ],
-      "required": false
+      "required": true
     },
     "overlay": {
       "type": "enumeration",
@@ -48,11 +51,13 @@
         "black"
       ]
     },
-    "ctaText": {
-      "type": "string"
-    },
-    "ctaUrl": {
-      "type": "string"
+    "contentVariant": {
+      "type": "enumeration",
+      "enum": [
+        "light",
+        "dark"
+      ],
+      "required": true
     }
   }
 }

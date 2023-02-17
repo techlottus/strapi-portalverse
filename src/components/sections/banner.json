@@ -19,6 +19,21 @@
     "ctaUrl": {
       "type": "string"
     },
+    "textPosition": {
+      "type": "enumeration",
+      "enum": [
+        "center",
+        "center top",
+        "center bottom",
+        "left top",
+        "left center",
+        "left bottom",
+        "right top",
+        "right center",
+        "right bottom"
+      ],
+      "required": true
+    },
     "backgroundImage": {
       "type": "media",
       "multiple": false,
@@ -37,6 +52,14 @@
         "white",
         "black"
       ]
+    },
+    "contentVariant": {
+      "type": "enumeration",
+      "enum": [
+        "light",
+        "dark"
+      ],
+      "required": true
     }
   }
 }
