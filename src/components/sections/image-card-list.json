@@ -9,11 +9,6 @@
     "title": {
       "type": "string"
     },
-    "imageCards": {
-      "type": "component",
-      "repeatable": true,
-      "component": "sections.image-card"
-    },
     "orientation": {
       "type": "enumeration",
       "enum": [
@@ -21,6 +16,11 @@
         "horizontal"
       ],
       "required": true
+    },
+    "imageCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.image-card"
     }
   }
 }
