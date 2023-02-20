@@ -13,11 +13,17 @@
     "subtitle": {
       "type": "text"
     },
-    "linkUrl": {
-      "type": "text"
+    "linkIconFirst": {
+      "type": "string"
     },
     "linkText": {
       "type": "string"
+    },
+    "linkIconSecond": {
+      "type": "string"
+    },
+    "linkUrl": {
+      "type": "text"
     },
     "image": {
       "type": "media",
@@ -26,12 +32,6 @@
       "allowedTypes": [
         "images"
       ]
-    },
-    "linkIconFirst": {
-      "type": "string"
-    },
-    "linkIconSecond": {
-      "type": "string"
     }
   }
 }
