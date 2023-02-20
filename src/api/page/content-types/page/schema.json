@@ -31,7 +31,10 @@
         "sections.blog-post-list",
         "sections.faq-section",
         "sections.statistics-card",
-        "sections.hero-slider"
+        "sections.hero-slider",
+        "sections.image-card-list",
+        "sections.promo-link-list",
+        "sections.text-image"
       ],
       "required": true
     },
