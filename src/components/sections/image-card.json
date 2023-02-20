@@ -27,10 +27,10 @@
         "images"
       ]
     },
-    "iconFirst": {
+    "linkIconFirst": {
       "type": "string"
     },
-    "iconSecond": {
+    "linkIconSecond": {
       "type": "string"
     }
   }
