@@ -26,7 +26,7 @@
       "components": [
         "sections.banner",
         "sections.blog-post-list",
-        "sections.cards",
+        "sections.overlay-card-list",
         "sections.entryconfig",
         "sections.faq-section",
         "sections.form-video",
