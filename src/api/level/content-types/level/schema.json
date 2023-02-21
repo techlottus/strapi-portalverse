@@ -4,7 +4,8 @@
   "info": {
     "singularName": "level",
     "pluralName": "levels",
-    "displayName": "Level"
+    "displayName": "Level",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,7 +14,17 @@
   "attributes": {
     "title": {
       "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "requirements": {
+      "type": "richtext",
       "required": true
+    },
+    "availableWorkModalities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::work-modality.work-modality"
     }
   }
 }
