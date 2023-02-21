@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_admission_requirements",
+  "info": {
+    "displayName": "AdmissionRequirements",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "tabs": {
+      "displayName": "AdmissionRequirementsTab",
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.admission-requirements-tab"
+    }
+  }
+}
