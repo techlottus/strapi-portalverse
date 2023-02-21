@@ -26,7 +26,7 @@
       "components": [
         "sections.banner",
         "sections.blog-post-list",
-        "sections.cards",
+        "sections.overlay-card-list",
         "sections.entryconfig",
         "sections.faq-section",
         "sections.form-video",
@@ -36,7 +36,9 @@
         "sections.offer",
         "sections.statistics-card-list",
         "sections.statistics-card",
-        "sections.text-image"
+        "sections.text-image",
+        "sections.image-card-list",
+        "sections.promo-link-list"
       ]
     },
     "seo": {
