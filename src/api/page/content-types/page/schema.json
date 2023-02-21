@@ -35,7 +35,8 @@
         "sections.image-card-list",
         "sections.promo-link-list",
         "sections.text-image",
-        "sections.tab-list"
+        "sections.tab-list",
+        "sections.admission-requirements"
       ],
       "required": true
     },
