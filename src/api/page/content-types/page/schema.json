@@ -34,7 +34,8 @@
         "sections.hero-slider",
         "sections.image-card-list",
         "sections.promo-link-list",
-        "sections.text-image"
+        "sections.text-image",
+        "sections.tab-list"
       ],
       "required": true
     },
