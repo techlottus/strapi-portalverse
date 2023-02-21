@@ -21,10 +21,10 @@
       "type": "richtext",
       "required": true
     },
-    "availableWorkModalities": {
+    "modalities": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::work-modality.work-modality"
+      "target": "api::modality.modality"
     }
   }
 }
