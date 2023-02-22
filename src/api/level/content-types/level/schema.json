@@ -21,6 +21,27 @@
       "type": "richtext",
       "required": true
     },
+    "requirementsDesktopImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "requirementsTabletImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "requirementsMobileImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
     "modalities": {
       "type": "relation",
       "relation": "oneToMany",
