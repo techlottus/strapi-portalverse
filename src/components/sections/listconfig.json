@@ -20,8 +20,7 @@
       "enum": [
         "blogentries",
         "pages",
-        "faq",
-        "modalities"
+        "faq"
       ]
     },
     "sortdate": {

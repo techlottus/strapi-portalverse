@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_levels",
+  "info": {
+    "displayName": "Levels",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "levels": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::level.level"
+    }
+  }
+}
