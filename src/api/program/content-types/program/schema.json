@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programs",
+  "info": {
+    "singularName": "program",
+    "pluralName": "programs",
+    "displayName": "Program",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "summary": {
+      "displayName": "summary",
+      "type": "component",
+      "repeatable": true,
+      "component": "programs.summary"
+    },
+    "admission_profile": {
+      "type": "richtext"
+    },
+    "graduate_profile": {
+      "type": "richtext"
+    },
+    "learning_resources": {
+      "type": "richtext"
+    },
+    "evaluation_methods": {
+      "type": "richtext"
+    },
+    "checkout_url": {
+      "type": "string"
+    },
+    "brands": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::brand.brand"
+    },
+    "openings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::opening.opening",
+      "mappedBy": "program"
+    },
+    "statistics": {
+      "displayName": "program statistics",
+      "type": "component",
+      "repeatable": true,
+      "component": "programs.program-statistics"
+    },
+    "level": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::level.level"
+    },
+    "labor_field": {
+      "type": "richtext"
+    }
+  }
+}
