@@ -32,31 +32,40 @@
       "repeatable": true,
       "component": "programs.summary"
     },
-    "admission_profile": {
-      "type": "richtext"
+    "level": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::level.level"
     },
-    "graduate_profile": {
-      "type": "richtext"
-    },
-    "learning_resources": {
-      "type": "richtext"
-    },
-    "evaluation_methods": {
-      "type": "richtext"
-    },
-    "checkout_url": {
-      "type": "string"
-    },
-    "brands": {
+    "knowledgeAreas": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::brand.brand"
+      "target": "api::knowledge-area.knowledge-area"
     },
-    "openings": {
+    "campuses": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::opening.opening",
-      "mappedBy": "program"
+      "target": "api::campus.campus"
+    },
+    "programModalities": {
+      "type": "component",
+      "repeatable": true,
+      "component": "programs.modality-feature"
+    },
+    "admissionProfile": {
+      "type": "richtext"
+    },
+    "graduateProfile": {
+      "type": "richtext"
+    },
+    "learningResources": {
+      "type": "richtext"
+    },
+    "evaluationMethods": {
+      "type": "richtext"
+    },
+    "laborField": {
+      "type": "richtext"
     },
     "statistics": {
       "displayName": "program statistics",
@@ -64,13 +73,23 @@
       "repeatable": true,
       "component": "programs.program-statistics"
     },
-    "level": {
+    "brands": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::level.level"
+      "relation": "oneToMany",
+      "target": "api::brand.brand"
     },
-    "labor_field": {
-      "type": "richtext"
+    "checkoutUrl": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal",
+      "default": 0
+    },
+    "openings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::opening.opening",
+      "mappedBy": "program"
     }
   }
 }
