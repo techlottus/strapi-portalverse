@@ -1,7 +1,8 @@
 {
   "collectionName": "components_programs_modality_features",
   "info": {
-    "displayName": "ModalityFeature"
+    "displayName": "ModalityFeature",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -21,6 +22,17 @@
     },
     "admissionRequirements": {
       "type": "richtext"
+    },
+    "programStatistics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "programs.program-statistics"
+    },
+    "summaries": {
+      "displayName": "Summary",
+      "type": "component",
+      "repeatable": true,
+      "component": "programs.summary"
     }
   }
 }

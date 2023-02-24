@@ -1,7 +1,7 @@
 {
   "collectionName": "components_programs_summaries",
   "info": {
-    "displayName": "summary"
+    "displayName": "Summary"
   },
   "options": {},
   "attributes": {
@@ -9,7 +9,6 @@
       "type": "string"
     },
     "subjects": {
-      "displayName": "summary subject",
       "type": "component",
       "repeatable": true,
       "component": "programs.summary-subject"
