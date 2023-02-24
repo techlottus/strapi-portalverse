@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "campuses",
+  "info": {
+    "singularName": "campus",
+    "pluralName": "campuses",
+    "displayName": "Campus",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "address": {
+      "type": "string",
+      "required": false
+    },
+    "state": {
+      "type": "enumeration",
+      "enum": [
+        "Coahuila",
+        "Nuevo León",
+        "Tamaulipas"
+      ],
+      "required": false
+    },
+    "phone": {
+      "type": "string",
+      "required": false,
+      "maxLength": 10,
+      "minLength": 7
+    },
+    "email": {
+      "type": "email"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "coordsX": {
+      "type": "float"
+    },
+    "coordsY": {
+      "type": "float"
+    }
+  }
+}
