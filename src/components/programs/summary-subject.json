@@ -1,12 +1,14 @@
 {
   "collectionName": "components_programs_summary_subjects",
   "info": {
-    "displayName": "summary subject"
+    "displayName": "SummarySubject",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }
