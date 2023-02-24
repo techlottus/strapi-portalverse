@@ -1,7 +1,8 @@
 {
   "collectionName": "components_programs_program_statistics",
   "info": {
-    "displayName": "program statistics"
+    "displayName": "ProgramStatistics",
+    "description": ""
   },
   "options": {},
   "attributes": {
