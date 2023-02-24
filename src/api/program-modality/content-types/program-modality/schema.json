@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "program_modalities",
+  "info": {
+    "singularName": "program-modality",
+    "pluralName": "program-modalities",
+    "displayName": "Program Modality",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "modality": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::modality.modality"
+    },
+    "admissionProfile": {
+      "type": "richtext"
+    },
+    "graduateProfile": {
+      "type": "richtext"
+    },
+    "laborField": {
+      "type": "richtext"
+    },
+    "admissionRequirements": {
+      "type": "richtext"
+    },
+    "program": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::program.program"
+    }
+  }
+}
