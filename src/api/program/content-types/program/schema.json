@@ -41,6 +41,11 @@
       "relation": "oneToMany",
       "target": "api::campus.campus"
     },
+    "programCategories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::program-category.program-category"
+    },
     "programModalities": {
       "type": "component",
       "repeatable": true,
