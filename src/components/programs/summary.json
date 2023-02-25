@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_programs_summaries",
+  "info": {
+    "displayName": "Summary"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subjects": {
+      "type": "component",
+      "repeatable": true,
+      "component": "programs.summary-subject"
+    }
+  }
+}

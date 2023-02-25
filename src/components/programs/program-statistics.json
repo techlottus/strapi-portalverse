@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_programs_program_statistics",
+  "info": {
+    "displayName": "ProgramStatistics",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "integer"
+    },
+    "suffix": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}

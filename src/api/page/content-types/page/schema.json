@@ -15,7 +15,7 @@
     "title": {
       "type": "string"
     },
-    "type": {
+    "slug": {
       "type": "string"
     },
     "sections": {
@@ -30,7 +30,12 @@
         "sections.form-video",
         "sections.blog-post-list",
         "sections.faq-section",
-        "sections.statistics-card"
+        "sections.statistics-card",
+        "sections.hero-slider",
+        "sections.image-card-list",
+        "sections.promo-link-list",
+        "sections.text-image",
+        "sections.levels"
       ],
       "required": true
     },

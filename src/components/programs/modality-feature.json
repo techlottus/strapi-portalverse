@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_programs_modality_features",
+  "info": {
+    "displayName": "ModalityFeature",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "modality": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::modality.modality"
+    },
+    "admissionProfile": {
+      "type": "richtext"
+    },
+    "graduateProfile": {
+      "type": "richtext"
+    },
+    "laborField": {
+      "type": "richtext"
+    },
+    "admissionRequirements": {
+      "type": "richtext"
+    },
+    "programStatistics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "programs.program-statistics"
+    },
+    "summaries": {
+      "displayName": "Summary",
+      "type": "component",
+      "repeatable": true,
+      "component": "programs.summary"
+    }
+  }
+}

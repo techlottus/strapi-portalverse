@@ -27,8 +27,7 @@
       "type": "enumeration",
       "enum": [
         "latest",
-        "earliest",
-        "all"
+        "earliest"
       ],
       "default": "latest"
     }

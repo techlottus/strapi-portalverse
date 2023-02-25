@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_image_card_lists",
+  "info": {
+    "displayName": "imageCardList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "orientation": {
+      "type": "enumeration",
+      "enum": [
+        "vertical",
+        "horizontal"
+      ],
+      "required": true
+    },
+    "imageCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.image-card"
+    }
+  }
+}

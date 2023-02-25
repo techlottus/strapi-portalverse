@@ -1,21 +1,19 @@
 {
   "collectionName": "components_sections_offers",
   "info": {
-    "displayName": "Offer",
-    "icon": "align-justify"
+    "displayName": "Offer Items",
+    "icon": "align-justify",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string"
     },
-    "subtitle": {
-      "type": "string"
-    },
-    "offer_categories": {
+    "levels": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::offer-category.offer-category"
+      "target": "api::level.level"
     }
   }
 }

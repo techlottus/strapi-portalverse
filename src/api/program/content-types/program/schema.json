@@ -1,0 +1,88 @@
+{
+  "kind": "collectionType",
+  "collectionName": "programs",
+  "info": {
+    "singularName": "program",
+    "pluralName": "programs",
+    "displayName": "Program",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "level": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::level.level"
+    },
+    "knowledgeAreas": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::knowledge-area.knowledge-area"
+    },
+    "campuses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::campus.campus"
+    },
+    "programCategories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::program-category.program-category"
+    },
+    "programModalities": {
+      "type": "component",
+      "repeatable": true,
+      "component": "programs.modality-feature"
+    },
+    "admissionProfile": {
+      "type": "richtext"
+    },
+    "graduateProfile": {
+      "type": "richtext"
+    },
+    "learningResources": {
+      "type": "richtext"
+    },
+    "evaluationMethods": {
+      "type": "richtext"
+    },
+    "laborField": {
+      "type": "richtext"
+    },
+    "brands": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::brand.brand"
+    },
+    "checkoutUrl": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal",
+      "default": 0
+    },
+    "openings": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::opening.opening",
+      "mappedBy": "program"
+    }
+  }
+}

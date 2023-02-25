@@ -7,7 +7,7 @@
   },
   "options": {},
   "attributes": {
-    "FormTitle": {
+    "formTitle": {
       "type": "string"
     },
     "formDescription": {
@@ -24,7 +24,7 @@
         "files"
       ]
     },
-    "formimage": {
+    "formImage": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -32,16 +32,19 @@
         "images"
       ]
     },
-    "videotitle": {
+    "videoTitle": {
       "type": "string"
     },
-    "youtubeurl": {
+    "videoHeight": {
+      "type": "integer"
+    },
+    "youtubeUrl": {
       "type": "string"
     },
     "contactCtaText": {
       "type": "string"
     },
-    "contactCtaURL": {
+    "contactCtaUrl": {
       "type": "string"
     }
   }
