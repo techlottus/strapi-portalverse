@@ -26,12 +26,6 @@
         "images"
       ]
     },
-    "summary": {
-      "displayName": "summary",
-      "type": "component",
-      "repeatable": true,
-      "component": "programs.summary"
-    },
     "level": {
       "type": "relation",
       "relation": "oneToOne",
@@ -46,6 +40,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::campus.campus"
+    },
+    "programCategories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::program-category.program-category"
     },
     "programModalities": {
       "type": "component",
@@ -66,12 +65,6 @@
     },
     "laborField": {
       "type": "richtext"
-    },
-    "statistics": {
-      "displayName": "program statistics",
-      "type": "component",
-      "repeatable": true,
-      "component": "programs.program-statistics"
     },
     "brands": {
       "type": "relation",
