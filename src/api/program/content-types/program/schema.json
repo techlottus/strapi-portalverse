@@ -83,6 +83,13 @@
       "relation": "oneToMany",
       "target": "api::opening.opening",
       "mappedBy": "program"
+    },
+    "brochure": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
