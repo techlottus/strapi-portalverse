@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_programs_schedules",
+  "info": {
+    "displayName": "schedule"
+  },
+  "options": {},
+  "attributes": {
+    "start_time": {
+      "type": "time",
+      "default": "19:00"
+    },
+    "end_time": {
+      "type": "time",
+      "default": "22:00"
+    },
+    "available_days": {
+      "type": "string",
+      "default": "Martes y Jueves"
+    }
+  }
+}
