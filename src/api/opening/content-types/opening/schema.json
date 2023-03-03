@@ -4,7 +4,8 @@
   "info": {
     "singularName": "opening",
     "pluralName": "openings",
-    "displayName": "Opening"
+    "displayName": "Opening",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,12 @@
       "relation": "manyToOne",
       "target": "api::program.program",
       "inversedBy": "openings"
+    },
+    "opening_schedule": {
+      "displayName": "schedule",
+      "type": "component",
+      "repeatable": false,
+      "component": "programs.schedule"
     }
   }
 }

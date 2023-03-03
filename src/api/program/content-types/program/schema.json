@@ -85,11 +85,21 @@
       "mappedBy": "program"
     },
     "brochure": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "files"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "available": {
+      "type": "boolean",
+      "default": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": false
     }
   }
 }
