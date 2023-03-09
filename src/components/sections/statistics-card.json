@@ -39,6 +39,17 @@
     },
     "icon": {
       "type": "string"
+    },
+    "border": {
+      "type": "boolean"
+    },
+    "color": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "container": {
+      "type": "boolean"
     }
   }
 }
