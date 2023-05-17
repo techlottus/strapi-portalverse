@@ -35,7 +35,8 @@
         "sections.image-card-list",
         "sections.promo-link-list",
         "sections.text-image",
-        "sections.levels"
+        "sections.levels",
+        "sections.contact-target-list"
       ],
       "required": true
     },
