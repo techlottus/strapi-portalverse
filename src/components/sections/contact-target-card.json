@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sections_contact_target_cards",
+  "info": {
+    "displayName": "ContactTargetCard"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": false
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}
