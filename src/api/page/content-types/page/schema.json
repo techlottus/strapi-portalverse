@@ -21,21 +21,7 @@
     "sections": {
       "type": "dynamiczone",
       "components": [
-        "sections.hero",
-        "sections.listconfig",
-        "sections.offer",
-        "sections.banner",
-        "sections.entryconfig",
-        "sections.statistics-card-list",
-        "sections.form-video",
-        "sections.blog-post-list",
-        "sections.faq-section",
-        "sections.statistics-card",
-        "sections.hero-slider",
-        "sections.image-card-list",
-        "sections.promo-link-list",
-        "sections.text-image",
-        "sections.levels",
+        "sections.contact-target-list",
         "sections.rich-text-image",
         "sections.alert",
         "sections.link-list"
