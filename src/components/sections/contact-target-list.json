@@ -6,20 +6,20 @@
   },
   "options": {},
   "attributes": {
-    "cards": {
-      "displayName": "ContactTargetCard",
-      "type": "component",
-      "repeatable": true,
-      "component": "sections.contact-target-card"
-    },
     "title": {
+      "type": "string"
+    },
+    "subtitle": {
       "type": "string"
     },
     "description": {
       "type": "richtext"
     },
-    "subtitle": {
-      "type": "string"
+    "cards": {
+      "displayName": "ContactTargetCard",
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.contact-target-card"
     }
   }
 }
