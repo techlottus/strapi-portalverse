@@ -35,7 +35,10 @@
         "sections.image-card-list",
         "sections.promo-link-list",
         "sections.text-image",
-        "sections.levels"
+        "sections.levels",
+        "sections.rich-text-image",
+        "sections.alert",
+        "sections.link-list"
       ],
       "required": true
     },
