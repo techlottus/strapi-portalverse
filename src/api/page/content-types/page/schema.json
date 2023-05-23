@@ -26,7 +26,8 @@
         "sections.alert",
         "sections.link-list",
         "sections.text-content",
-        "sections.banner"
+        "sections.banner",
+        "sections.leaderboard"
       ],
       "required": true
     },
