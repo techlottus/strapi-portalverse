@@ -25,7 +25,8 @@
         "sections.rich-text-image",
         "sections.alert",
         "sections.link-list",
-        "sections.text-content"
+        "sections.text-content",
+        "sections.banner"
       ],
       "required": true
     },
