@@ -15,7 +15,7 @@
     "desktopImage": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "images"
       ]
@@ -50,7 +50,8 @@
         "light",
         "dark"
       ],
-      "default": "light"
+      "default": "light",
+      "required": true
     }
   }
 }
