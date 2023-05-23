@@ -24,7 +24,8 @@
         "sections.contact-target-list",
         "sections.rich-text-image",
         "sections.alert",
-        "sections.link-list"
+        "sections.link-list",
+        "sections.text-content"
       ],
       "required": true
     },
