@@ -27,7 +27,8 @@
         "sections.link-list",
         "sections.text-content",
         "sections.banner",
-        "sections.leaderboard"
+        "sections.leaderboard",
+        "sections.faq-section"
       ],
       "required": true
     },

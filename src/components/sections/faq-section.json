@@ -14,6 +14,11 @@
       "repeatable": false,
       "component": "sections.listconfig"
     },
+    "faqCategory": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::faq-category.faq-category"
+    },
     "component": {
       "type": "enumeration",
       "enum": [

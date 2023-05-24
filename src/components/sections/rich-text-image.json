@@ -27,6 +27,9 @@
         "right"
       ],
       "default": "right"
+    },
+    "backgroundColor": {
+      "type": "string"
     }
   }
 }
