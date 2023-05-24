@@ -31,6 +31,14 @@
     "backgroundColor": {
       "type": "string",
       "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+    },
+    "contentVariant": {
+      "type": "enumeration",
+      "enum": [
+        "light",
+        "dark"
+      ],
+      "default": "dark"
     }
   }
 }
