@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_sections_contact_target_lists",
+  "info": {
+    "displayName": "ContactTargetList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "cards": {
+      "displayName": "ContactTargetCard",
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.contact-target-card"
+    }
+  }
+}
