@@ -1,14 +1,11 @@
 {
-  "collectionName": "components_sections_blog_post_podcasts",
+  "collectionName": "components_sections_blog_posts_podcasts",
   "info": {
-    "displayName": "BlogPostPodcast",
+    "displayName": "BlogPostsPodcast",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "blogPostsTitle": {
-      "type": "string"
-    },
     "blogPosts": {
       "type": "component",
       "repeatable": false,

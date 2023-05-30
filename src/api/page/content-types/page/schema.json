@@ -30,7 +30,7 @@
         "sections.leaderboard",
         "sections.faq-section",
         "sections.podcast-list",
-        "sections.podcast-item"
+        "sections.blog-posts-podcast"
       ],
       "required": true
     },
