@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "podcasts",
+  "info": {
+    "singularName": "podcast",
+    "pluralName": "podcasts",
+    "displayName": "Podcast",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "providerId": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "playlist",
+        "episode",
+        "album",
+        "artist",
+        "track"
+      ]
+    },
+    "publicationDate": {
+      "type": "date"
+    }
+  }
+}

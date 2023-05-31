@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_sections_blog_posts_podcasts",
+  "info": {
+    "displayName": "BlogPostsPodcast",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "blogPosts": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.listconfig"
+    },
+    "podcastItemsTitle": {
+      "type": "string"
+    },
+    "podcastItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.podcast-item"
+    },
+    "banners": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.banner"
+    }
+  }
+}

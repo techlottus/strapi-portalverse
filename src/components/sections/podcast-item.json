@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_podcast_items",
+  "info": {
+    "displayName": "PodcastItem"
+  },
+  "options": {},
+  "attributes": {
+    "podcastItem": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::podcast.podcast"
+    },
+    "format": {
+      "type": "enumeration",
+      "enum": [
+        "normal",
+        "compact"
+      ]
+    }
+  }
+}
