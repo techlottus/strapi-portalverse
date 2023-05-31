@@ -28,7 +28,9 @@
         "sections.text-content",
         "sections.banner",
         "sections.leaderboard",
-        "sections.faq-section"
+        "sections.faq-section",
+        "sections.podcast-list",
+        "sections.blog-posts-podcast"
       ],
       "required": true
     },
