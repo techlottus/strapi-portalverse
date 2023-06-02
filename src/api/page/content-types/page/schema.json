@@ -18,7 +18,7 @@
     "slug": {
       "type": "string"
     },
-    "breadcumb": {
+    "breadcrumb": {
       "type": "string"
     },
     "sections": {
