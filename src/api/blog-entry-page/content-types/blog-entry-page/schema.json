@@ -24,7 +24,8 @@
     "sections": {
       "type": "dynamiczone",
       "components": [
-        "sections.banner"
+        "sections.banner",
+        "sections.entryconfig"
       ]
     },
     "seo": {
