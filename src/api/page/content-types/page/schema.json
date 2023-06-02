@@ -18,6 +18,9 @@
     "slug": {
       "type": "string"
     },
+    "breadcumb": {
+      "type": "string"
+    },
     "sections": {
       "type": "dynamiczone",
       "components": [
