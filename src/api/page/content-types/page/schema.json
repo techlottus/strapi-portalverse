@@ -18,6 +18,9 @@
     "slug": {
       "type": "string"
     },
+    "breadcrumb": {
+      "type": "string"
+    },
     "sections": {
       "type": "dynamiczone",
       "components": [
