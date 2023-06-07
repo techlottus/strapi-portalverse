@@ -12,10 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true
-    },
     "slug": {
       "type": "text",
       "required": true,
@@ -24,26 +20,8 @@
     "sections": {
       "type": "dynamiczone",
       "components": [
-        "sections.banner",
-        "sections.blog-post-list",
-        "sections.overlay-card-list",
-        "sections.entryconfig",
-        "sections.faq-section",
-        "sections.form-video",
-        "sections.hero-slider",
-        "sections.hero",
-        "sections.listconfig",
-        "sections.offer",
-        "sections.statistics-card-list",
-        "sections.statistics-card",
-        "sections.text-image"
+        "sections.banner"
       ]
-    },
-    "seo": {
-      "type": "component",
-      "repeatable": false,
-      "component": "shared.seo",
-      "required": true
     }
   }
 }

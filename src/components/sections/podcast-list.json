@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_podcast_lists",
+  "info": {
+    "displayName": "PodcastList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "podcastItems": {
+      "displayName": "PodcastItem",
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.podcast-item"
+    }
+  }
+}
