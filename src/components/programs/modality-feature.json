@@ -33,6 +33,9 @@
       "repeatable": true,
       "component": "programs.curriculum-by-campus"
     },
+    "curriculumDescription": {
+      "type":"richtext"
+    },
     "summaries": {
       "displayName": "Summary",
       "type": "component",
