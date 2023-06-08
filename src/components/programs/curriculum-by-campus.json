@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_programs_curriculum_by_campuses",
+  "info": {
+    "displayName": "CurriculumByCampus"
+  },
+  "options": {},
+  "attributes": {
+    "campus": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::campus.campus"
+    },
+    "curriculumUrl": {
+      "type": "string"
+    }
+  }
+}
