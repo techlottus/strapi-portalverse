@@ -34,7 +34,7 @@
       "component": "programs.curriculum-by-campus"
     },
     "curriculumDescription": {
-      "type":"richtext"
+      "type": "richtext"
     },
     "summaries": {
       "displayName": "Summary",
