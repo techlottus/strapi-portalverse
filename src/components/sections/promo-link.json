@@ -1,21 +1,22 @@
 {
   "collectionName": "components_sections_promo_links",
   "info": {
-    "displayName": "promoLink"
+    "displayName": "promoLink",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "title": {
+    "text": {
       "type": "string",
       "required": true
     },
-    "linkUrl": {
+    "link": {
       "type": "text"
     },
-    "linkText": {
+    "className": {
       "type": "string"
     },
-    "shadowColor": {
+    "color": {
       "type": "string",
       "required": true,
       "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
