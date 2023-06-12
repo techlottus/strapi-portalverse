@@ -35,7 +35,8 @@
         "sections.podcast-list",
         "sections.blog-posts-podcast",
         "sections.listconfig",
-        "sections.hero-slider"
+        "sections.hero-slider",
+        "sections.card-list"
       ],
       "required": true
     },
