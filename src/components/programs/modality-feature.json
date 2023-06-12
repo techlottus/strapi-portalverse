@@ -28,6 +28,14 @@
       "repeatable": true,
       "component": "programs.program-statistics"
     },
+    "curriculums": {
+      "type": "component",
+      "repeatable": true,
+      "component": "programs.curriculum-by-campus"
+    },
+    "curriculumDescription": {
+      "type": "richtext"
+    },
     "summaries": {
       "displayName": "Summary",
       "type": "component",
