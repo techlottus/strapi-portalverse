@@ -36,6 +36,7 @@
         "sections.blog-posts-podcast",
         "sections.listconfig",
         "sections.hero-slider",
+        "sections.promo-link-list",
         "sections.card-list"
       ],
       "required": true

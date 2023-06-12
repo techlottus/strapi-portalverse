@@ -13,12 +13,6 @@
       "type": "component",
       "repeatable": true,
       "component": "sections.promo-link"
-    },
-    "linkText": {
-      "type": "string"
-    },
-    "linkUrl": {
-      "type": "text"
     }
   }
 }
