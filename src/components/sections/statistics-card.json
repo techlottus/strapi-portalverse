@@ -22,23 +22,20 @@
     "suffix": {
       "type": "string"
     },
-    "boxShadowColor": {
+    "iconName": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "variant": {
       "type": "enumeration",
       "enum": [
-        "blue-pastel-left",
-        "yellow-pastel-left",
-        "red-pastel-left",
-        "gray-pastel-left",
-        "blue-left",
-        "blue-pastel-right",
-        "yellow-pastel-right",
-        "red-pastel-right",
-        "gray-pastel-right",
-        "blue-right"
-      ]
-    },
-    "icon": {
-      "type": "string"
+        "default",
+        "stroke",
+        "shadow"
+      ],
+      "default": "default"
     }
   }
 }
