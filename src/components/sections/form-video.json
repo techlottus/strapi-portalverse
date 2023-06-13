@@ -35,16 +35,7 @@
     "videoTitle": {
       "type": "string"
     },
-    "videoHeight": {
-      "type": "integer"
-    },
-    "youtubeUrl": {
-      "type": "string"
-    },
-    "contactCtaText": {
-      "type": "string"
-    },
-    "contactCtaUrl": {
+    "youtubeId": {
       "type": "string"
     }
   }
