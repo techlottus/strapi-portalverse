@@ -28,8 +28,9 @@
     },
     "level": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::level.level"
+      "relation": "manyToOne",
+      "target": "api::level.level",
+      "inversedBy": "programs"
     },
     "knowledgeAreas": {
       "type": "relation",

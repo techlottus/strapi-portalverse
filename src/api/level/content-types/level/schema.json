@@ -49,6 +49,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::modality.modality"
+    },
+    "programs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::program.program",
+      "mappedBy": "level"
     }
   }
 }
