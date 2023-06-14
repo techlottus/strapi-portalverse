@@ -37,7 +37,10 @@
         "sections.listconfig",
         "sections.hero-slider",
         "sections.promo-link-list",
-        "sections.card-list"
+        "sections.card-list",
+        "sections.overlay-card-list",
+        "sections.statistics-card-list",
+        "sections.form-video"
       ],
       "required": true
     },
