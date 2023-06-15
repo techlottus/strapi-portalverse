@@ -14,6 +14,12 @@
     "name": {
       "type": "string",
       "required": true
+    },
+    "programs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::program.program",
+      "inversedBy": "programCategories"
     }
   }
 }
