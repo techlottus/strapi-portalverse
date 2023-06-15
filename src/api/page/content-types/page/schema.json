@@ -41,7 +41,8 @@
         "sections.overlay-card-list",
         "sections.statistics-card-list",
         "sections.form-video",
-        "sections.programs-filter"
+        "sections.programs-filter",
+        "sections.cont-ed-programs"
       ],
       "required": true
     },
