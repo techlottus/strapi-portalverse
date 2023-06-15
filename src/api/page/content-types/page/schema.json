@@ -40,7 +40,8 @@
         "sections.card-list",
         "sections.overlay-card-list",
         "sections.statistics-card-list",
-        "sections.form-video"
+        "sections.form-video",
+        "sections.programs-filter"
       ],
       "required": true
     },
