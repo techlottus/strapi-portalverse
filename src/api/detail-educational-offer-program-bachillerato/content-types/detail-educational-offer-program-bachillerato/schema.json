@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "detail_educational_offer_program_bachilleratoes",
+  "info": {
+    "singularName": "detail-educational-offer-program-bachillerato",
+    "pluralName": "detail-educational-offer-program-bachilleratoes",
+    "displayName": "DetailEducationalOfferProgramBachillerato"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "videoId": {
+      "type": "string"
+    },
+    "admissionProfileImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "graduateProfileImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.banner"
+    }
+  }
+}

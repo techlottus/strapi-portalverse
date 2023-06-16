@@ -1,0 +1,60 @@
+{
+  "kind": "singleType",
+  "collectionName": "detail_educational_offer_program_superiors",
+  "info": {
+    "singularName": "detail-educational-offer-program-superior",
+    "pluralName": "detail-educational-offer-program-superiors",
+    "displayName": "DetailEducationalOfferProgramSuperior"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "admissionProfileImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "graduateProfileImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "admissionRequirementsImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "laborFieldImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "laborFieldBackgroundColor": {
+      "type": "string"
+    },
+    "admissionProfileBackgroundColor": {
+      "type": "string"
+    },
+    "admissionRequirementsBackgroundColor": {
+      "type": "string"
+    },
+    "graduateProfileBackgroundColor": {
+      "type": "string"
+    },
+    "banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.banner"
+    }
+  }
+}
