@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_programs_filters",
+  "info": {
+    "displayName": "ProgramsFilter",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "level": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::level.level"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

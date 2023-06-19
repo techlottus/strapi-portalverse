@@ -44,8 +44,9 @@
     },
     "programCategories": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::program-category.program-category"
+      "relation": "manyToMany",
+      "target": "api::program-category.program-category",
+      "mappedBy": "programs"
     },
     "programModalities": {
       "type": "component",
