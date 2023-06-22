@@ -4,7 +4,8 @@
   "info": {
     "singularName": "detail-educational-offer-program-bachillerato",
     "pluralName": "detail-educational-offer-program-bachilleratoes",
-    "displayName": "DetailEducationalOfferProgramBachillerato"
+    "displayName": "DetailEducationalOfferProgramBachillerato",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,18 +16,20 @@
       "type": "string"
     },
     "admissionProfileImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "graduateProfileImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
     "banner": {
       "type": "component",
