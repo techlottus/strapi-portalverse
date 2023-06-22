@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "detail_educational_offer_program_superiors",
+  "collectionName": "program_detail_superiors",
   "info": {
-    "singularName": "detail-educational-offer-program-superior",
-    "pluralName": "detail-educational-offer-program-superiors",
-    "displayName": "DetailEducationalOfferProgramSuperior"
+    "singularName": "program-detail-superior",
+    "pluralName": "program-detail-superiors",
+    "displayName": "Program Detail - Superior"
   },
   "options": {
     "draftAndPublish": true
@@ -25,13 +25,6 @@
       "type": "media",
       "multiple": false
     },
-    "admissionRequirementsImage": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
     "laborFieldImage": {
       "allowedTypes": [
         "images"
@@ -39,16 +32,23 @@
       "type": "media",
       "multiple": false
     },
-    "laborFieldBackgroundColor": {
-      "type": "string"
+    "admissionRequirementsImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     },
     "admissionProfileBackgroundColor": {
       "type": "string"
     },
-    "admissionRequirementsBackgroundColor": {
+    "graduateProfileBackgroundColor": {
       "type": "string"
     },
-    "graduateProfileBackgroundColor": {
+    "laborFieldBackgroundColor": {
+      "type": "string"
+    },
+    "admissionRequirementsBackgroundColor": {
       "type": "string"
     },
     "banner": {

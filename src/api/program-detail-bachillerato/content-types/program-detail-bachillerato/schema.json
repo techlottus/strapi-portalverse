@@ -1,10 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "detail_educational_offer_program_bachilleratoes",
+  "collectionName": "program_detail_bachilleratoes",
   "info": {
-    "singularName": "detail-educational-offer-program-bachillerato",
-    "pluralName": "detail-educational-offer-program-bachilleratoes",
-    "displayName": "DetailEducationalOfferProgramBachillerato",
+    "singularName": "program-detail-bachillerato",
+    "pluralName": "program-detail-bachilleratoes",
+    "displayName": "Program Detail - Bachillerato",
     "description": ""
   },
   "options": {
