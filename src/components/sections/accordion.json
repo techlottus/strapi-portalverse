@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_sections_accordions",
+  "info": {
+    "displayName": "Accordion",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "accordionItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.accordion-item"
+    }
+
+  }
+}

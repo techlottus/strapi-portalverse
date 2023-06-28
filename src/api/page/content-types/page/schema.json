@@ -42,7 +42,8 @@
         "sections.statistics-card-list",
         "sections.form-video",
         "sections.programs-filter",
-        "sections.cont-ed-programs"
+        "sections.cont-ed-programs",
+        "sections.accordion"
       ],
       "required": true
     },
