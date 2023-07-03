@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_fonts_font_names",
+  "info": {
+    "displayName": "Font names"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
