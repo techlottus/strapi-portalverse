@@ -1,0 +1,48 @@
+{
+  "kind": "singleType",
+  "collectionName": "palletes",
+  "info": {
+    "singularName": "pallete",
+    "pluralName": "palletes",
+    "displayName": "Pallete",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "primary": {
+      "displayName": "color intensity",
+      "type": "component",
+      "repeatable": false,
+      "component": "colors.color-intensity",
+      "required": true
+    },
+    "secondary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "colors.color-intensity",
+      "required": true
+    },
+    "surface": {
+      "type": "component",
+      "repeatable": false,
+      "component": "colors.color-intensity",
+      "required": true
+    },
+    "contextual": {
+      "displayName": "contextual colors",
+      "type": "component",
+      "repeatable": false,
+      "component": "colors.contextual-colors",
+      "required": true
+    },
+    "complementary": {
+      "displayName": "complementary colors",
+      "type": "component",
+      "repeatable": true,
+      "component": "colors.complementary-colors"
+    }
+  }
+}
