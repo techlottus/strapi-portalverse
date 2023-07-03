@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_logos_custom_logos",
+  "info": {
+    "displayName": "Custom logo"
+  },
+  "options": {},
+  "attributes": {
+    "logo_token": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}
