@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_colors_contextual_colors",
+  "info": {
+    "displayName": "contextual colors",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "success": {
+      "type": "component",
+      "repeatable": false,
+      "component": "colors.color-intensity",
+      "required": true
+    },
+    "error": {
+      "type": "component",
+      "repeatable": false,
+      "component": "colors.color-intensity",
+      "required": true
+    },
+    "warning": {
+      "type": "component",
+      "repeatable": false,
+      "component": "colors.color-intensity",
+      "required": true
+    },
+    "info": {
+      "type": "component",
+      "repeatable": false,
+      "component": "colors.color-intensity",
+      "required": true
+    }
+  }
+}

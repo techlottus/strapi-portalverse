@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_colors_complementary_colors",
+  "info": {
+    "displayName": "complementary colors"
+  },
+  "options": {},
+  "attributes": {
+    "token": {
+      "type": "string",
+      "required": true
+    },
+    "colors": {
+      "type": "component",
+      "repeatable": false,
+      "component": "colors.color-intensity",
+      "required": true
+    }
+  }
+}
