@@ -1,0 +1,7 @@
+{
+  "name": "strapi-provider-upload-custom-provider",
+  "version": "4.6.0",
+  "description": "AWS S3 provider for strapi upload",
+  "license": "SEE LICENSE IN LICENSE"
+  
+}
