@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "fonts",
+  "info": {
+    "singularName": "font",
+    "pluralName": "fonts",
+    "displayName": "font",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "headings": {
+      "displayName": "google font",
+      "type": "component",
+      "repeatable": false,
+      "component": "fonts.google-font",
+      "required": true
+    },
+    "texts": {
+      "type": "component",
+      "repeatable": false,
+      "component": "fonts.google-font",
+      "required": true
+    }
+  }
+}
