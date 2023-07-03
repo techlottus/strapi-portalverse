@@ -8,12 +8,11 @@
     "description": ""
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {},
   "attributes": {
     "headings": {
-      "displayName": "google font",
       "type": "component",
       "repeatable": false,
       "component": "fonts.google-font",
@@ -22,8 +21,13 @@
     "texts": {
       "type": "component",
       "repeatable": false,
-      "component": "fonts.google-font",
-      "required": true
+      "required": true,
+      "component": "fonts.google-font"
+    },
+    "extra_fonts": {
+      "type": "component",
+      "repeatable": true,
+      "component": "fonts.extra-font"
     }
   }
 }

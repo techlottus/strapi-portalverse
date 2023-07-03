@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_fonts_extra_fonts",
+  "info": {
+    "displayName": "extra font",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "token": {
+      "type": "string",
+      "required": true
+    },
+    "font": {
+      "type": "component",
+      "repeatable": false,
+      "component": "fonts.google-font"
+    }
+  }
+}

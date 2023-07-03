@@ -1,8 +1,7 @@
 {
   "collectionName": "components_fonts_google_fonts",
   "info": {
-    "displayName": "google font",
-    "description": ""
+    "displayName": "Google font"
   },
   "options": {},
   "attributes": {
@@ -11,12 +10,9 @@
       "required": true
     },
     "font_names": {
-      "displayName": "Font names",
       "type": "component",
       "repeatable": true,
-      "component": "fonts.font-names",
-      "required": true,
-      "min": 1
+      "component": "fonts.font-names"
     }
   }
 }
