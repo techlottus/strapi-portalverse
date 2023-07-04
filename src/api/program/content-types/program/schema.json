@@ -18,6 +18,9 @@
     "description": {
       "type": "text"
     },
+    "detail": {
+      "type": "richtext"
+    },
     "image": {
       "type": "media",
       "multiple": false,
@@ -79,6 +82,13 @@
     "price": {
       "type": "decimal",
       "default": 0
+    },
+    "offerPrice": {
+      "type": "decimal",
+      "default": 0
+    },
+    "priceDetail": {
+      "type": "richtext"
     },
     "openings": {
       "type": "relation",
