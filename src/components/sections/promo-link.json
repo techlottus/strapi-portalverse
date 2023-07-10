@@ -1,7 +1,7 @@
 {
   "collectionName": "components_sections_promo_links",
   "info": {
-    "displayName": "promoLink",
+    "displayName": "PromoLinkItem",
     "description": ""
   },
   "options": {},
