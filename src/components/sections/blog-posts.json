@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_sections_blog_posts",
+  "info": {
+    "displayName": "BlogPosts"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "maxEntries": {
+      "type": "integer",
+      "required": true
+    },
+    "category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::category.category"
+    },
+    "sort": {
+      "type": "enumeration",
+      "enum": [
+        "latest",
+        "earliest"
+      ],
+      "default": "latest"
+    }
+  }
+}
