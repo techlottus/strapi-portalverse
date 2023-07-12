@@ -43,7 +43,8 @@
         "sections.form-video",
         "sections.programs-filter",
         "sections.cont-ed-programs",
-        "sections.accordion"
+        "sections.accordion",
+        "sections.blog-posts"
       ],
       "required": true
     },
