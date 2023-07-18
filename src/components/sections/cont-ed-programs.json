@@ -1,7 +1,8 @@
 {
   "collectionName": "components_sections_cont_ed_programs",
   "info": {
-    "displayName": "ContEdPrograms"
+    "displayName": "Container-educacionContinua",
+    "description": ""
   },
   "options": {},
   "attributes": {

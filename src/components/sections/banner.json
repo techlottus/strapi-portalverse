@@ -1,7 +1,7 @@
 {
   "collectionName": "components_sections_banners",
   "info": {
-    "displayName": "banner",
+    "displayName": "Banner-hero",
     "icon": "audio-description",
     "description": ""
   },
@@ -32,7 +32,8 @@
         "right center",
         "right bottom"
       ],
-      "required": true
+      "required": false,
+      "default": "left top"
     },
     "desktopRatio": {
       "type": "string",
@@ -87,7 +88,8 @@
         "light",
         "dark"
       ],
-      "required": true
+      "required": false,
+      "default": "light"
     }
   }
 }
