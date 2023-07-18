@@ -1,7 +1,8 @@
 {
   "collectionName": "components_sections_card_lists",
   "info": {
-    "displayName": "CardList"
+    "displayName": "Container-cardList",
+    "description": ""
   },
   "options": {},
   "attributes": {

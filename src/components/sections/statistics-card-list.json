@@ -1,8 +1,9 @@
 {
   "collectionName": "components_sections_statistics_card_lists",
   "info": {
-    "displayName": "statisticsCardList",
-    "icon": "bars"
+    "displayName": "Numbers",
+    "icon": "bars",
+    "description": ""
   },
   "options": {},
   "attributes": {

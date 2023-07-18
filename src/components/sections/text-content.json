@@ -1,7 +1,8 @@
 {
   "collectionName": "components_sections_text_contents",
   "info": {
-    "displayName": "TextContent"
+    "displayName": "TextContent",
+    "description": ""
   },
   "options": {},
   "attributes": {

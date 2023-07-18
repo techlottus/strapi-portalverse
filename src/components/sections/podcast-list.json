@@ -1,7 +1,8 @@
 {
   "collectionName": "components_sections_podcast_lists",
   "info": {
-    "displayName": "PodcastList"
+    "displayName": "EmbedPodcast",
+    "description": ""
   },
   "options": {},
   "attributes": {
