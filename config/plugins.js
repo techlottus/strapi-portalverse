@@ -19,7 +19,7 @@ module.exports = ({ env }) => ({
       apiToken: env('VERCEL_DEPLOY_API_TOKEN'),
       appFilter: env('VERCEL_DEPLOY_APP_FILTER'),
       teamFilter: env('VERCEL_DEPLOY_TEAM_FILTER'),
-      roles: ["strapi-super-admin", "strapi-editor", "strapi-author"],
+      roles: ["strapi-super-admin", "strapi-editor", "strapi-author", "strapi-uteg-editor"],
     }
   },
 });
