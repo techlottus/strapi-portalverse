@@ -1774,7 +1774,7 @@
     lodash "4.17.21"
     sift "16.0.1"
 
-"@strapi/plugin-color-picker@^4.11.7":
+"@strapi/plugin-color-picker@^4.12.1":
   version "4.12.1"
   resolved "https://registry.yarnpkg.com/@strapi/plugin-color-picker/-/plugin-color-picker-4.12.1.tgz#fee6125eaab9df94412ff879b3d52909f9fec3b1"
   integrity sha512-TnGxOPypw3bg7JlXVnRsnTLjdSA+wCzQssCrNf3SGa8SqKdboChrVk6qZ+exeFoAGeUjkR2+b3AcdVe+mrBqNw==
@@ -1833,7 +1833,7 @@
     react-intl "6.4.1"
     yup "0.32.9"
 
-"@strapi/plugin-graphql@^4.11.7":
+"@strapi/plugin-graphql@^4.12.1":
   version "4.12.1"
   resolved "https://registry.yarnpkg.com/@strapi/plugin-graphql/-/plugin-graphql-4.12.1.tgz#9613df4d08b1fb3f6b5614427636e9bd52ec3f75"
   integrity sha512-9g1KlrUTAzTqhANTIGT2eIx1cDuDzuZ71hX14BMuAQxL0heMYqPTJRPrxFquJAMgzi8N3BvZE5eh8zLLsNrZTA==
@@ -1857,7 +1857,7 @@
     nexus "1.3.0"
     pluralize "^8.0.0"
 
-"@strapi/plugin-i18n@^4.11.7":
+"@strapi/plugin-i18n@^4.12.1":
   version "4.12.1"
   resolved "https://registry.yarnpkg.com/@strapi/plugin-i18n/-/plugin-i18n-4.12.1.tgz#4c0e72df440315914c907d636a8c890ea28ba9f8"
   integrity sha512-59zK54f+yovi0cxS1Jos0l6jYatHnvKKqb6h7xKs8clk/mmes/UaalDPk8/oXQIRlJ2BMPWgS0RtBW8d4h8pZw==
@@ -1932,7 +1932,7 @@
     "@strapi/utils" "4.12.1"
     sendmail "^1.6.1"
 
-"@strapi/provider-upload-aws-s3@^4.11.7":
+"@strapi/provider-upload-aws-s3@^4.12.1":
   version "4.12.1"
   resolved "https://registry.yarnpkg.com/@strapi/provider-upload-aws-s3/-/provider-upload-aws-s3-4.12.1.tgz#88966783c77dfd0b4db99517cfc77bed7fda5e36"
   integrity sha512-Q6nPUICJQX1k70iy31STDvcjH/o1Znk9yx3w+SEXY66LI501cT3pLezsrQowd3aUk5FtldaHImGEt5EE5fBSlQ==
@@ -1948,7 +1948,7 @@
     "@strapi/utils" "4.12.1"
     fs-extra "10.0.0"
 
-"@strapi/strapi@4.12.1", "@strapi/strapi@^4.11.7":
+"@strapi/strapi@4.12.1", "@strapi/strapi@^4.12.1":
   version "4.12.1"
   resolved "https://registry.yarnpkg.com/@strapi/strapi/-/strapi-4.12.1.tgz#dca77d6ca5158aae9c331cd55d26792fc80f377f"
   integrity sha512-c4PPNlQUKiaIp/mhDMyUzrU8BDqJMNvwfNl7gJC/+zKw85Rr4p297RtIshQs4j9TA6K6JYVE53ZEX/I5lAZgBg==
