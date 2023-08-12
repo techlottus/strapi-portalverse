@@ -6,10 +6,10 @@
   },
   "options": {},
   "attributes": {
-    "categories": {
+    "knowledgeAreas": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::program-category.program-category"
+      "target": "api::knowledge-area.knowledge-area"
     }
   }
 }
