@@ -16,6 +16,12 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "programs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::program.program",
+      "mappedBy": "knowledgeAreas"
     }
   }
 }

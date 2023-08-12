@@ -17,9 +17,9 @@
     },
     "programs": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "oneToMany",
       "target": "api::program.program",
-      "inversedBy": "programCategories"
+      "mappedBy": "programCategory"
     }
   }
 }
