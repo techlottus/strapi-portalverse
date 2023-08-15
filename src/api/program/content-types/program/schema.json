@@ -37,19 +37,20 @@
     },
     "knowledgeAreas": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::knowledge-area.knowledge-area"
+      "relation": "manyToMany",
+      "target": "api::knowledge-area.knowledge-area",
+      "inversedBy": "programs"
     },
     "campuses": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::campus.campus"
     },
-    "programCategories": {
+    "programCategory": {
       "type": "relation",
-      "relation": "manyToMany",
+      "relation": "manyToOne",
       "target": "api::program-category.program-category",
-      "mappedBy": "programs"
+      "inversedBy": "programs"
     },
     "programModalities": {
       "type": "component",
