@@ -27,7 +27,7 @@
       "type": "string"
     },
     "linkUrl": {
-      "type": "string"
+      "type": "text"
     },
     "image": {
       "type": "media",
