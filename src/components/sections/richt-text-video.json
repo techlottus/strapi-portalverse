@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_sections_richt_text_videos",
+  "info": {
+    "displayName": "RichtTextVideo",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "providerId": {
+      "type": "string"
+    },
+    "videoPosition": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ],
+      "default": "left"
+    },
+    "contentVariant": {
+      "type": "enumeration",
+      "enum": [
+        "dark",
+        "light"
+      ],
+      "default": "dark"
+    },
+    "backgroundColor": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "provider": {
+      "type": "enumeration",
+      "enum": [
+        "Youtube",
+        "Vimeo"
+      ],
+      "default": "Youtube"
+    }
+  }
+}

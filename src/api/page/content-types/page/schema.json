@@ -43,7 +43,8 @@
         "sections.overlay-card-list",
         "sections.rich-text-image",
         "sections.hero-slider",
-        "sections.text-content"
+        "sections.text-content",
+        "sections.richt-text-video"
       ],
       "required": true
     },
