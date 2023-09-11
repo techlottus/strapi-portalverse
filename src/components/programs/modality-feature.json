@@ -11,6 +11,9 @@
       "relation": "oneToOne",
       "target": "api::modality.modality"
     },
+    "labelModality": {
+      "type": "string"
+    },
     "admissionProfile": {
       "type": "richtext"
     },
