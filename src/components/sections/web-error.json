@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_web_errors",
+  "info": {
+    "displayName": "web error",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.link",
+      "required": true
+    }
+  }
+}
