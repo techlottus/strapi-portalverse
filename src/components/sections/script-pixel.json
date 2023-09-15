@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_script_pixels",
+  "info": {
+    "displayName": "ScriptPixel"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "script": {
+      "type": "text"
+    },
+    "pixel": {
+      "displayName": "Pixel",
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.pixel"
+    }
+  }
+}

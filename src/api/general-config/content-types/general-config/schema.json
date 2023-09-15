@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "general_configs",
+  "info": {
+    "singularName": "general-config",
+    "pluralName": "general-configs",
+    "displayName": "General Config",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "scriptsPixels": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.script-pixel"
+    }
+  }
+}
