@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_molecules_buttons",
+  "info": {
+    "displayName": "Button",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "variant": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "outlined",
+        "outlined-negative"
+      ],
+      "default": "primary",
+      "required": false
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "xs",
+        "sm",
+        "md",
+        "lg"
+      ]
+    },
+    "iconName": {
+      "type": "string"
+    },
+    "CTA": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
