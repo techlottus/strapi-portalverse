@@ -52,6 +52,11 @@
       ],
       "default": "light",
       "required": true
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecules.button"
     }
   }
 }
