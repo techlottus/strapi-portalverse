@@ -1,0 +1,57 @@
+{
+  "collectionName": "components_sections_outstanding_rainbows",
+  "info": {
+    "displayName": "Outstanding",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecules.button"
+    },
+    "backgroundColor": {
+      "type": "string"
+    },
+    "imagePosition": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ],
+      "default": "right"
+    },
+    "backgroundWidth": {
+      "type": "enumeration",
+      "enum": [
+        "outstanding",
+        "rainbow"
+      ]
+    },
+    "contentVariant": {
+      "type": "enumeration",
+      "enum": [
+        "dark",
+        "light"
+      ]
+    }
+  }
+}
