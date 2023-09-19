@@ -44,14 +44,16 @@
       "enum": [
         "outstanding",
         "rainbow"
-      ]
+      ],
+      "default": "outstanding"
     },
     "contentVariant": {
       "type": "enumeration",
       "enum": [
         "dark",
         "light"
-      ]
+      ],
+      "default": "dark"
     }
   }
 }
