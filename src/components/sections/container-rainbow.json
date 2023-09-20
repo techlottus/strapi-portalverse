@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_sections_container_rainbows",
+  "info": {
+    "displayName": "container-Rainbow"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "outstanding": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.outstanding-rainbow"
+    }
+  }
+}
