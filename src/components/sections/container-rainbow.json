@@ -8,7 +8,7 @@
     "title": {
       "type": "string"
     },
-    "outstanding": {
+    "outstandings": {
       "type": "component",
       "repeatable": true,
       "component": "sections.outstanding-rainbow"
