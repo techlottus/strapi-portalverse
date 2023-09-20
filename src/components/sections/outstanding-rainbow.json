@@ -14,7 +14,7 @@
     },
     "image": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
@@ -42,18 +42,16 @@
     "backgroundWidth": {
       "type": "enumeration",
       "enum": [
-        "outstanding",
-        "rainbow"
-      ],
-      "default": "outstanding"
+        "w-full",
+        "w-3/4"
+      ]
     },
     "contentVariant": {
       "type": "enumeration",
       "enum": [
         "dark",
         "light"
-      ],
-      "default": "dark"
+      ]
     }
   }
 }
