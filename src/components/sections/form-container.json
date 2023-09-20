@@ -1,0 +1,53 @@
+{
+  "collectionName": "components_sections_form_containers",
+  "info": {
+    "displayName": "Container-form",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "showProgress": {
+      "type": "boolean",
+      "default": true
+    },
+    "privacyPolicy": {
+      "displayName": "privacyPolicy",
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.privacy-policy"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecules.button"
+    },
+    "extra_text": {
+      "type": "text"
+    },
+    "form": {
+      "type": "enumeration",
+      "enum": [
+        "Clinicas Dentales"
+      ]
+    },
+    "error": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.web-error"
+    }
+  }
+}
