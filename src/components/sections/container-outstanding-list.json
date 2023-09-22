@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_sections_container_rainbows",
+  "collectionName": "components_sections_container_outstanding_lists",
   "info": {
-    "displayName": "container-Rainbow"
+    "displayName": "container-outstandingList"
   },
   "options": {},
   "attributes": {
@@ -11,7 +11,7 @@
     "outstandings": {
       "type": "component",
       "repeatable": true,
-      "component": "sections.outstanding-rainbow"
+      "component": "sections.outstanding"
     }
   }
 }
