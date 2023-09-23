@@ -15,10 +15,9 @@
     "button": {
       "type": "component",
       "repeatable": false,
-      "component": "sections.link",
-      "required": true
+      "component": "sections.link"
     },
-    "error_code": {
+    "errorCode": {
       "type": "string"
     }
   }

@@ -37,8 +37,7 @@
     "form": {
       "type": "enumeration",
       "enum": [
-        "Clinicas Dentales",
-        "OpenForm"
+        "Clinicas Dentales"
       ]
     },
     "progress": {
