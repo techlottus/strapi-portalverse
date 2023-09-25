@@ -45,7 +45,8 @@
         "sections.hero-slider",
         "sections.text-content",
         "sections.rich-text-video",
-        "sections.container-outstanding-list"
+        "sections.container-outstanding-list",
+        "sections.form-container"
       ],
       "required": true
     },

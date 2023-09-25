@@ -1,7 +1,8 @@
 {
   "collectionName": "components_sections_script_pixels",
   "info": {
-    "displayName": "ScriptPixel"
+    "displayName": "ScriptPixel",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -17,6 +18,17 @@
       "type": "component",
       "repeatable": false,
       "component": "sections.pixel"
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": true
+    },
+    "triggerOnRouteChange": {
+      "type": "enumeration",
+      "enum": [
+        "gtagPageview",
+        "fbqPageview"
+      ]
     }
   }
 }
