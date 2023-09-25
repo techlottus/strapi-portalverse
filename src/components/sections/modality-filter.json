@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_sections_modality_filters",
+  "info": {
+    "displayName": "ModalityFilter"
+  },
+  "options": {},
+  "attributes": {
+    "modality": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::modality.modality"
+    }
+  }
+}
