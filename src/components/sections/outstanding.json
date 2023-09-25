@@ -1,7 +1,7 @@
 {
   "collectionName": "components_sections_outstanding",
   "info": {
-    "displayName": "Outstanding",
+    "displayName": "OutstandingItem",
     "description": ""
   },
   "options": {},
@@ -15,12 +15,9 @@
     "image": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
+        "images"
       ]
     },
     "button": {
@@ -29,7 +26,8 @@
       "component": "molecules.button"
     },
     "backgroundColor": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "imagePosition": {
       "type": "enumeration",
@@ -44,14 +42,16 @@
       "enum": [
         "w-full",
         "w-3/4"
-      ]
+      ],
+      "default": "w-full"
     },
     "contentVariant": {
       "type": "enumeration",
       "enum": [
         "dark",
         "light"
-      ]
+      ],
+      "default": "dark"
     }
   }
 }

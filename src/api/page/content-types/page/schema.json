@@ -45,7 +45,6 @@
         "sections.hero-slider",
         "sections.text-content",
         "sections.rich-text-video",
-        "sections.outstanding",
         "sections.container-outstanding-list"
       ],
       "required": true
