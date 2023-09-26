@@ -47,6 +47,8 @@
         "sections.rich-text-video",
         "sections.container-outstanding-list",
         "sections.google-map",
+        "sections.knowledge-area-filter",
+        "sections.modality-filter",
         "sections.form-container"
       ],
       "required": true
