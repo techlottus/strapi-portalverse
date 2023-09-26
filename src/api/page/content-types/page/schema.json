@@ -46,6 +46,7 @@
         "sections.text-content",
         "sections.rich-text-video",
         "sections.container-outstanding-list",
+        "sections.google-map",
         "sections.form-container"
       ],
       "required": true
