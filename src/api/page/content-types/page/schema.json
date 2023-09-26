@@ -45,6 +45,7 @@
         "sections.hero-slider",
         "sections.text-content",
         "sections.rich-text-video",
+        "sections.google-map",
         "sections.form-container"
       ],
       "required": true
