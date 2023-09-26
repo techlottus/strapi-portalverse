@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_sections_google_maps",
+  "info": {
+    "displayName": "GoogleMap",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "src": {
+      "type": "text",
+      "required": true,
+      "regex": "https://www.google.com/maps/embed"
+    },
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "receptionPhone": {
+      "type": "string"
+    },
+    "admissionPhone": {
+      "type": "string"
+    },
+    "schedule": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "tour",
+        "map"
+      ],
+      "default": "map"
+    },
+    "detailPosition": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right",
+        "top"
+      ]
+    }
+  }
+}
