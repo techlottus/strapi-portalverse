@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_sections_container_outstanding_lists",
+  "info": {
+    "displayName": "container-outstandingList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "outstandings": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.outstanding"
+    }
+  }
+}
