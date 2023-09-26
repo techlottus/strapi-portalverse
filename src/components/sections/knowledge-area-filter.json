@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_sections_knowledge_area_filters",
+  "info": {
+    "displayName": "KnowledgeAreaFilter"
+  },
+  "options": {},
+  "attributes": {
+    "area": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::knowledge-area.knowledge-area"
+    }
+  }
+}
