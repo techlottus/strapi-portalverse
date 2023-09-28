@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_programs_program_accordion_items",
+  "info": {
+    "displayName": "ProgramAccordionItem",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "level": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::level.level"
+    },
+    "campus": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::campus.campus"
+    },
+    "modality": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::modality.modality"
+    }
+  }
+}
