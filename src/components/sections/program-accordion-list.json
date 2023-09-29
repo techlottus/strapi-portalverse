@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_program_accordion_lists",
+  "info": {
+    "displayName": "ProgramAccordionList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "programAccordionItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "programs.program-accordion-item"
+    }
+  }
+}

@@ -31,8 +31,10 @@
         "sections.blog-posts-podcast",
         "sections.card-list",
         "sections.contact-target-list",
+        "sections.container-outstanding-list",
         "sections.cont-ed-programs",
         "sections.faq-section",
+        "sections.form-container",
         "sections.form-video",
         "sections.listconfig",
         "sections.link-list",
@@ -42,14 +44,13 @@
         "sections.statistics-card-list",
         "sections.overlay-card-list",
         "sections.rich-text-image",
+        "sections.rich-text-video",
         "sections.hero-slider",
         "sections.text-content",
-        "sections.rich-text-video",
-        "sections.container-outstanding-list",
         "sections.google-map",
         "sections.knowledge-area-filter",
         "sections.modality-filter",
-        "sections.form-container"
+        "sections.program-accordion-list"
       ],
       "required": true
     },
