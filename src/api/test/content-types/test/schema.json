@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tests",
+  "info": {
+    "singularName": "test",
+    "pluralName": "tests",
+    "displayName": "test"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "prueba": {
+      "type": "customField",
+      "customField": "plugin::fetch-content.api-select"
+    }
+  }
+}

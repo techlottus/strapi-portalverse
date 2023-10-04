@@ -22,4 +22,8 @@ module.exports = ({ env }) => ({
       roles: [],
     }
   },
+  'fetch-content': {
+    enabled: true,
+    resolve: './src/plugins/fetch-content'
+  },
 });
