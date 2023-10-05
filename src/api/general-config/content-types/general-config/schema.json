@@ -17,7 +17,7 @@
       "repeatable": true,
       "component": "sections.script-pixel"
     },
-    "send_whatsapp": {
+    "sendWhatsapp": {
       "displayName": "send whatsapp",
       "type": "component",
       "repeatable": false,
