@@ -29,6 +29,13 @@
         "gtagPageview",
         "fbqPageview"
       ]
+    },
+    "src": {
+      "type": "string"
+    },
+    "async": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

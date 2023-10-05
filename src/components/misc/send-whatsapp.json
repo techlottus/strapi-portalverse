@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_misc_send_whatsapps",
+  "info": {
+    "displayName": "send whatsapp"
+  },
+  "options": {},
+  "attributes": {
+    "hidden": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "phone": {
+      "type": "biginteger",
+      "required": true,
+      "default": "5555555555"
+    }
+  }
+}
