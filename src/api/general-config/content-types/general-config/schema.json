@@ -16,6 +16,12 @@
       "type": "component",
       "repeatable": true,
       "component": "sections.script-pixel"
+    },
+    "sendWhatsapp": {
+      "displayName": "send whatsapp",
+      "type": "component",
+      "repeatable": false,
+      "component": "misc.send-whatsapp"
     }
   }
 }
