@@ -5,7 +5,7 @@ module.exports = ({ strapi }) => {
   strapi.customFields.register({
     name: "api-select",
     plugin: "fetch-content",
-    type: "string",
+    type: "json",
     inputSize: {
       // optional
       default: 12,

@@ -31,7 +31,7 @@ export default {
     app.customFields.register({
       name: "api-select",
       pluginId: "fetch-content", 
-      type: "string", 
+      type: "json", 
       intlLabel: {
         id: "fetch-content.api-select.label",
         defaultMessage: "texto fetch content",
@@ -45,7 +45,6 @@ export default {
         Input: async () => import(/* webpackChunkName: "input-component" */ "./components/APISelect"),
       },
       options: {
-
       },
     });
     app.registerPlugin({
