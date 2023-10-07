@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sections_rockstar_infos",
+  "info": {
+    "displayName": "RockstarInfo",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "campus": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::campus.campus"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "detail": {
+      "type": "richtext"
+    }
+  }
+}
