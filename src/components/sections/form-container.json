@@ -40,6 +40,26 @@
         "Clinicas Dentales"
       ]
     },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ]
+    },
+    "width": {
+      "type": "enumeration",
+      "enum": [
+        "w-12/12",
+        "w-11/12",
+        "w-10/12",
+        "w-9/12",
+        "w-8/12",
+        "w-7/12",
+        "w-6/12"
+      ]
+    },
     "progress": {
       "type": "integer",
       "max": 100

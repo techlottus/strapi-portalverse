@@ -51,6 +51,7 @@
         "sections.knowledge-area-filter",
         "sections.modality-filter",
         "sections.program-accordion-list",
+        "sections.rockstar-info-list",
         "content-relations.conect-content"
       ],
       "required": true
