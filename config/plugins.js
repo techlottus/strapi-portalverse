@@ -1,4 +1,11 @@
 module.exports = ({ env }) => ({
+  plugins: [
+    {
+      redirects: {
+        enabled: true
+      }
+    }
+  ],
   upload: {
     config: {
       provider: 'aws-s3',
