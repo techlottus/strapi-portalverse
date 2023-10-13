@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_content_relations_conect_contents",
+  "info": {
+    "displayName": "conect content"
+  },
+  "options": {},
+  "attributes": {
+    "relatedContent": {
+      "type": "customField",
+      "customField": "plugin::fetch-content.api-select"
+    }
+  }
+}

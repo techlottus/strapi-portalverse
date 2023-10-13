@@ -50,7 +50,8 @@
         "sections.google-map",
         "sections.knowledge-area-filter",
         "sections.modality-filter",
-        "sections.program-accordion-list"
+        "sections.program-accordion-list",
+        "content-relations.conect-content"
       ],
       "required": true
     },

@@ -5,225 +5,211 @@
  */
 
 import React, { useEffect, useState } from 'react';
-import { useIntl } from 'react-intl';
-import { TextInput } from '@strapi/design-system/TextInput';
 import { Stack } from '@strapi/design-system/Stack';
 import { Button } from '@strapi/design-system/Button';
-import { Textarea, SingleSelect, SingleSelectOption, Loader, Box, Accordion, AccordionToggle, AccordionContent, Typography } from '@strapi/design-system';
-import { auth } from '@strapi/helper-plugin'
+import {
+  SingleSelect,
+  SingleSelectOption,
+  Loader,
+  Box,
+  Typography,
+  Flex,
+  TextButton,
+  AccordionGroup,
+  ModalLayout,
+  ModalHeader,
+  ModalBody,
+  ModalFooter, 
+  BaseButton,
+  MultiSelect,
+  MultiSelectOption
+} from '@strapi/design-system';
 import { useCMEditViewDataManager, getFetchClient  } from '@strapi/helper-plugin';
+import { Plus, Component } from '@strapi/icons';
+import NestedAccordionSelect from '../NestedAccordionSelect';
 import NestedAccordion from '../NestedAccordion';
-
 
 export default function APISelect({
   name,
   error,
-  description,
   onChange,
-  value,
+  value = JSON.stringify({ content : null, components: [ ]}),
   intlLabel,
   attribute,
 }) {
+
   const prefilledContent = value ?  JSON.parse(value) : null 
-  console.log('value: ', value);
-  console.log('prefilledContent: ', prefilledContent);
-  const { formatMessage } = useIntl();
-  const [prompt, setPrompt] = useState('');
+  // console.log('value: ', value);
+  // console.log('prefilledContent: ', prefilledContent);
   const [loading, setLoading] = useState(false); 
   const [err, setErr] = useState(''); 
   const [disabled, toggleDisabled] = useState(false);
   const [contentTypes, setContentTypes] = useState([]);
   const [components, setComponents] = useState([]);
-  const [selectedContent, setSelectedContent] = useState(prefilledContent);
-
-  const { modifiedData } = useCMEditViewDataManager ()
-  const [expandedContentID, setExpandedContentID] = useState(null);
-  const handleToggleContent = (id) => () => {
-    setExpandedContentID(s => s === id ? null : id);
-    setExpandedContentID2(s => null);
-    setExpandedContentID3(s => null);
-  };
-  const [expandedContentID2, setExpandedContentID2] = useState(null);
-  const handleToggleContent2 = (id) => () => {
-    setExpandedContentID2(s => s === id ? null : id);
-    setExpandedContentID3(s => null);
-  };
-  const [expandedContentID3, setExpandedContentID3] = useState(null);
-  const handleToggleContent3 = (id) => () => {
-    setExpandedContentID3(s => s === id ? null : id);
-  };
-  const handleToggleComponent = (id) => () => {
-    setExpandedComponentID(s => s === id ? null : id);
-    setExpandedComponentID2(s => null);
-    setExpandedComponentID3(s => null);
-  };
-  const [expandedComponentID2, setExpandedComponentID2] = useState(null);
-  const handleToggleComponent2 = (id) => () => {
-    setExpandedComponentID2(s => s === id ? null : id);
-    setExpandedComponentID3(s => null);
-  };
-  const [expandedComponentID3, setExpandedComponentID3] = useState(null);
-  const handleToggleComponent3 = (id) => () => {
-    setExpandedComponentID3(s => s === id ? null : id);
-  };
-
-  const { get } = getFetchClient();
+  const [selectedContent, setSelectedContent] = useState( prefilledContent ? prefilledContent?.content?.apiID : null);
+  const [selectedComponents, setSelectedComponents] = useState(prefilledContent?.components || []);
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [selectedContents, setSelectedContents] = useState([]);
   
+  const { modifiedData } = useCMEditViewDataManager()
+  const { get } = getFetchClient();
   useEffect(() => {
-
-      console.log('modifiedData: ', modifiedData)
-
-  }, [modifiedData])
-  useEffect(async () => {
-    // await getComponents()
-    // console.log('components: ', components);
-    await getcontentTypes()
-    // console.log('contentTypes: ', contentTypes);
+    getcontentTypes()
+    getComponents()
   }, [])
+  // models = {
+  //   programs: {
+  //     contents : {
+  //       values:{
+  //         keys: []
+  //       }
+  //     }
+  //   }
+  // }
+  // value = ['programs', 'contents', 'values', 'keys']
+  // models[value[0]][value[1]][value[2]]
+  // getvalue = (model, key) => {
+  //   return model[key]
+  // }
   useEffect(() => {
-    console.log('contentTypes: ', contentTypes);
-  }, [contentTypes])
+    console.log('modifiedData: ', modifiedData)
+  }, [modifiedData])
+
   useEffect(() => {
     console.log('selectedContent: ', selectedContent);
-    console.log('selectedContent?.attributes: ', selectedContent?.attributes);
-  }, [selectedContent])
+    console.log('selectedComponents: ', selectedComponents);
+    triggerChange()
 
-  const selectContent = (apiID) => {
-    const content = contentTypes.filter(content => content.apiID === apiID)[0]
-    if (content) {
-      setSelectedContent(content)
+  }, [selectedContent, selectedComponents])
+
+  const patchSelectedComponents = (component) => {
+    const newComponents = selectedComponents.map((selectedComponent, i) => {
+      if (selectedComponent?.apiID === component.apiID) {
+        console.log(component);
+        return component
+      }
+      return selectedComponent
+    })
+    if (component) {
+      setSelectedComponents(newComponents)
     }
-    onChange({ target: { name, value: JSON.stringify(content), type: attribute.type } })
   }
+  const selectComponent = (apiID) => {
+    const component = { ...components.filter(component => component?.apiID === apiID)[0], index: selectedComponents.length }
+    if (component) {
+      setSelectedComponents([...selectedComponents, component])
+    }
+  }
+  const removeComponent = (apiID) => {
+    const newComponents = selectedComponents.reduce((acc, curr) => {
+      if (curr.apiID !== apiID) acc = [...acc, curr]
+      return acc
+    }, [])
+    setSelectedComponents(newComponents)
+  }
+  const filterComponent = (uid) => {
+    const component = components.filter(component => component.uid === uid)[0]
+    return component
+  }
+  const filterSelectedComponents = (uid) => {
+    const component = selectedComponents.filter(component => component.uid === uid)[0]
+    return component
+  }
+  const filterContent = ({apiID = false, uid = false}) => {
+    const content = apiID
+      ? contentTypes?.filter(content => content?.apiID === apiID)[0]
+      : contentTypes?.filter(content => content?.uid === uid)[0]
 
-  const parseContent = (content, models, skip, componentList) => {
-    // console.groupCollapsed('parseContent: ', content.uid)
-    // console.log('content: ', content);
-    // console.log('typeof content.attributes: ', typeof content.attributes);
-    // console.log('componentList: ', componentList);
+    return content
+  }
+  // const selectContents = (apiID) => {
+  //   const content = filterContent({apiID})
+  //   if (content) {
+  //     setSelectedContents([ ,content])
+  //   }
+  //   onChange({ target: { name, value: JSON.stringify(content), type: attribute.type } })
+  // }
+  const triggerChange =() => {
+    const value = {
+      content: filterContent({apiID: selectedContent}) || (prefilledContent?.content || null),
+      components: selectedComponents
+    } 
+    onChange({ target: { name, value: JSON.stringify(value), type: attribute.type } })
+  }
+  const getValue = ( propvalue ) => {
+    console.log('propvalue:', propvalue);
+    console.log('selectedComponents:', selectedComponents);
+    if (propvalue)  {
+
+      console.log('getValue API SELECT propvalue:', propvalue);
+      const component = selectedComponents[propvalue?.parentIndex]
+      const attributes = component.attributes
+      if (attributes[propvalue?.index].type === propvalue.type) {
+        
+        attributes[propvalue?.index] =  propvalue
+        component.attributes = attributes
+        console.log('getValue API SELECT component:', component);
+        const components = [ ...selectedComponents ]
+        components[propvalue.parentIndex] = component
+        console.log('getValue API SELECT components:', components);
+        setSelectedComponents([])
+        setSelectedComponents(components)
+      }
+      // onChange({ target: { name, value: JSON.stringify(value), type: attribute.type } })
+      // const finalValue = {
+      //   content: filterContent({apiID: selectedContent}) || (prefilledContent?.content || null),
+      //   components: selectedComponents
+      // } 
+      // onChange({ target: { name, value: JSON.stringify(finalValue), type: attribute.type } })
+    }
+  }
+  const parseContent = (content) => {
+    console.groupCollapsed('parseContent: ', content.uid)
+    console.log('content: ', content);
+    console.log('typeof content.attributes: ', typeof content.attributes);
     const attrs = content.attributes
     const keys = Object.keys(attrs)
-    const attributes = keys.map((key, i) => {
-      if (attrs[key].type === "relation") {
-        // console.log('key: ', key);
-        // console.log('skip: ', skip);
-        // console.log('attrs[key].targetModel: ', attrs[key].targetModel);
-        // console.log('content.uid !== attrs[key].targetModel: ', content.uid !== attrs[key].targetModel);
-        // console.log('skip !== attrs[key].targetModel: ', skip !== attrs[key].targetModel);
-        if (content.uid !== attrs[key].targetModel && skip !== attrs[key].targetModel ) {
-          const innerContent = models.filter(content => content.uid === attrs[key].targetModel)[0]
-          // console.log('innerContent: ', innerContent);
-          // console.groupCollapsed(`Parsing attributes ${i}`)
-            const newInnerContent = parseContent(innerContent, models, content.uid, componentList)
-            // console.log('newInnerContent: ', newInnerContent);
-          // console.groupEnd()
-          return { ...attrs[key], label: key, ...newInnerContent}
-        }
-        return { ...attrs[key], label: key}
-      } else if (attrs[key].type === "component") {
-
-        // console.groupCollapsed('component: ', attrs[key].component);
-        // console.log('attrs[key]: ', attrs[key]);
-        const innerComponent = componentList.filter(component => component.uid === attrs[key].component)[0]
-        // console.log('innerComponent: ', innerComponent);
-        // console.groupEnd()
-        return { ...attrs[key], label: key, ...innerComponent}
-
-      } else if (attrs[key].type === "dynamiczone") {
-
-        // console.groupCollapsed('synamic zone: ', attrs[key].label);
-        // console.log('attrs[key]: ', attrs[key]);
-        // console.log('attrs[key].components: ', attrs[key].components);
-        const innerComponents = attrs[key].components.map(comp => {
-          
-          const innerComponent = componentList.filter(component => component.uid === comp)[0]
-          // console.log('innerComponent: ', innerComponent);
-          return innerComponent
-        })
-        // console.log('innerComponents: ', innerComponents);
-        // console.groupEnd()
-        return { ...attrs[key], label: key, components: innerComponents}
-
-      }
-      return { ...attrs[key], label: key }
-    })
+    const attributes = keys.map((key, i) => ({ ...attrs[key], label: key, value: []}))
     const parsedContent = { ...content, attributes}
-    // console.groupEnd()
+    console.groupEnd()
 
     return parsedContent
   }
   const getcontentTypes = async () => {
-    const componentsResponse = await getComponents()
     setLoading(true)
     try {
       const response = await get(`/content-manager/content-types/`);
       // console.log('response: ', response);
-      const models = response.data.data.reduce((acc, curr, i, arr) => {
-        const { apiID, uid, attributes } = curr
-        if (uid.includes('api::')) {
-          const label = apiID.split('-').map(([first, ...rest]) => `${first.toUpperCase()}${rest.join('')}`).join(' ')
-          const model = parseContent({apiID, uid, attributes, label}, arr, uid, componentsResponse)
-          // console.log('model: ', model);
-           acc = [...acc, model]
+      const contents = response.data.data.reduce((acc, curr) => {
+        if (curr.uid.includes('api::')) {
+          const label = curr.apiID.split('-').map(([first, ...rest]) => `${first.toUpperCase()}${rest.join('')}`).join(' ')
+          const content = parseContent({...curr, label, value: []})
+          // console.log('content: ', content);
+           acc = [...acc, content]
         }
         return acc
       }, [])
 
-      setContentTypes(models)
+      setContentTypes(contents)
       setLoading(false)
 
     } catch (err) {
       setErr(err.message);
       setLoading(false)
     }
-
   }
-  const parseComponents = (component, components, skip) => {
-    // console.groupCollapsed('parseComponent')
-    // console.log('component: ', component);
-    // console.log('typeof component.attributes: ', typeof component.attributes);
+  const parseComponent = (component) => {
+    console.groupCollapsed('parseComponent: ', component.apiID)
+    console.log('component: ', component);
+    console.log('typeof component.attributes: ', typeof component.attributes);
     const attrs = component.attributes
     const keys = Object.keys(attrs)
     const attributes = keys.map((key, i) => {
-      // if (attrs[key].type === "relation") {
-        // // console.log('key: ', key);
-        // // console.log('skip: ', skip);
-        // // console.log('attrs[key].targetModel: ', attrs[key].targetModel);
-        // // console.log('component.uid !== attrs[key].targetModel: ', component.uid !== attrs[key].targetModel);
-        // // console.log('skip !== attrs[key].targetModel: ', skip !== attrs[key].targetModel);
-        // if (component.uid !== attrs[key].targetModel && skip !== attrs[key].targetModel ) {
-        //   const innerComponent = components.filter(component => component.uid === attrs[key].targetModel)[0]
-        //   // console.log('innerComponent: ', innerComponent);
-        //   // console.groupCollapsed(`Parsing attributes ${i}`)
-        //     const newInnerComponent = parseComponent(innerComponent, components, component.uid)
-        //     // console.log('newInnerComponent: ', newInnerComponent);
-        //   console.groupEnd()
-        //   return { ...attrs[key], label: key, ...newInnerComponent}
-        // }
-        // return { ...attrs[key], label: key}
-      // } else 
-      if (attrs[key].type === "component") {
-        // console.log('key: ', key);
-        // console.log('skip: ', skip);
-        // console.log('attrs[key].component: ', attrs[key].component);
-        // console.log('component.uid !== attrs[key].component: ', component.uid !== attrs[key].component);
-        // console.log('skip !== attrs[key].component: ', skip !== attrs[key].component);
-        if (component.uid !== attrs[key].component && skip !== attrs[key].component ) {
-          const innerComponent = components.filter(component => component.uid === attrs[key].component)[0]
-          // console.log('innerComponent: ', innerComponent);
-          // console.groupCollapsed(`Parsing attributes ${i}`)
-            const newInnerComponent = parseComponents(innerComponent, components, component.uid)
-          //   console.log('newInnerComponent: ', newInnerComponent);
-          // console.groupEnd()
-          return { ...attrs[key], label: key, ...newInnerComponent}
-        }
-        return { ...attrs[key], label: key}
-      }
-      return { ...attrs[key], label: key }
+      return { ...attrs[key], label: key, value: [], index: i }
     })
-    const parsedComponent = { ...component, attributes}
-    // console.log('parsedComponent: ', parsedComponent);
-    // console.groupEnd('parseComponent')
+    const parsedComponent = { ...component, attributes, label: component?.apiID, value: [] }
+    console.log('parsedComponent: ', parsedComponent);
+    console.groupEnd('parseComponent')
 
     return parsedComponent
   }
@@ -232,8 +218,7 @@ export default function APISelect({
     try {
       const response = await get(`/content-manager/components/`);
       const components = response.data.data.reduce((acc, curr, i, arr) => {
-        
-        const component = parseComponents(curr, arr, curr.uid)
+        const component = parseComponent(curr)
           acc = [...acc, component]
         return acc
       }, [])
@@ -250,162 +235,95 @@ export default function APISelect({
 
   return <>
     <Stack spacing={1}>
+      {/* <p className='w-full bg-slate-500 text-white'>prueba tailwind</p> */}
       {
-        loading && <Stack>
-
-          <Loader/>
-        </Stack>
+        (loading) && <Loader/>
       }
       {
-        !loading && <>
-          <SingleSelect onChange={selectContent} label={intlLabel.defaultMessage} value={selectedContent?.apiID || value} required placeholder="Select a content type" hint="Content type is used to get attributes and generate its variables" error={error} disabled={disabled}>
+        (!loading && contentTypes.length > 0) && <>
+          <SingleSelect onChange={setSelectedContent} label={intlLabel.defaultMessage} value={selectedContent} required placeholder="Select a content type" hint="Content type is used to get attributes and generate its variables" error={error} disabled={disabled}>
             {
-              contentTypes.map(content => <SingleSelectOption value={content.apiID}>{content.label}</SingleSelectOption>)
+              contentTypes?.map((content, i) => <SingleSelectOption key={`contents-option-${i}`} value={content.apiID}>{content.label}</SingleSelectOption>)
             }
           </SingleSelect>
+          {/* <MultiSelect label="Fruits" required placeholder="My favourite fruit is..." onClear={() => {
+              setSelectedContents([]);
+            }} value={selectedContents} onChange={setSelectedContents}
+            withTags
+          >
+            {
+              contentTypes.map((content, i) => <MultiSelectOption key={`contents-option-${i}`} value={content.apiID}>{content.label}</MultiSelectOption>)
+            }
+          </MultiSelect>; */}
+          
+          <AccordionGroup
+            footer={
+              <Flex justifyContent="center" height="48px" background="neutral140">
+                <TextButton startIcon={<Plus />} onClick={() => setIsModalVisible(prev => !prev)}>
+                  Add a component
+                </TextButton>
+              </Flex>
+            }
+            label="sections" 
+          >
+            {
+              selectedComponents.map((component, i) => {
+                return <NestedAccordion title={component.info.displayName} handleDelete={() => removeComponent(component.apiID)}>
+                  {
+                     component.attributes?.map((attr, j) => {
+                      return <NestedAccordionSelect
+                        key={ `comp${i}-attr${j}` }
+                        attr={ {...attr, index: j} }
+                        filterContent={ filterContent }
+                        filterComponent={ filterComponent }
+                        selectedContent={ filterContent({ apiID: selectedContent }) }
+                        sendValue={ getValue }
+                        parent={{ ...component, index: i, first: true }}
+                      />
+                    })
+                  }
+                </NestedAccordion>
+              })
+            }
+          </AccordionGroup>
           {
-            selectedContent && <NestedAccordion variant="secondary" title={selectedContent.label} >
-              <ul>
-                {
-                  selectedContent?.attributes?.map((attr, i1) => {
-                    if (attr.type === "relation" || attr.type === "component") {
-                      return attr.attributes 
-                        ? <NestedAccordion variant="secondary" title={attr.label} >
-                            <ul>
-                              {
-                                attr.attributes?.map((secondAttr, i2) => {
-                                  if (secondAttr.type === "relation" || secondAttr.type === "component") {
-                                    return secondAttr.attributes 
-                                      ? <NestedAccordion variant="secondary" title={secondAttr.label} >
-                                          <ul>
-                                            {
-                                              secondAttr.attributes?.map((thirdAttr, i3) => {
-                                                if (thirdAttr.type === "relation" || thirdAttr.type === "component") {
-                                                  return <>
-                                                    { !!thirdAttr.attributes 
-                                                        ? <NestedAccordion variant="secondary" title={thirdAttr.label} >
-                                                            <ul>
-                                                              {
-                                                                thirdAttr.attributes?.map(fourthAttr => {
-                                                                  if (fourthAttr.type === "relation" || fourthAttr.type === "component") {
-                                                                    return <>
-                                                                    {
-                                                                      !!fourthAttr.attributes 
-                                                                        ? <NestedAccordion variant="secondary" title={fourthAttr.label} >
-                                                                            <ul>
-                                                                              {
-                                                                                fourthAttr.attributes?.map(fifthAttr => <li className='px-3' style={{'margin': '8px'}}><Typography>{ fifthAttr.label }</Typography></li>)
-                                                                              }
-                                                                            </ul>
-                                                                          </NestedAccordion>
-                                                                        // delete if dont want to show relation without attributes, not parsed because parent is same model
-                                                                        : fourthAttr.type === "relation" && contentTypes.filter(content => content.uid === fourthAttr.target)[0]
-                                                                          ? <NestedAccordion variant="secondary" title={fourthAttr.label} >
-                                                                              <ul>
-                                                                                {
-                                                                                  contentTypes.filter(content => content.uid === fourthAttr.target)[0].attributes?.map(fifthAttr => <li className='px-3' style={{'margin': '8px'}}><Typography>{ fifthAttr.label }</Typography></li>)
-                                                                                }
-                                                                              </ul>
-                                                                            </NestedAccordion>
-                                                                              
-                                                                          : <li className='px-3' style={{'margin': '8px'}}><Typography>{ fourthAttr.label }</Typography></li>
-                                                                      }
-                                                                    </> 
-                                                                    
-                                                                  } else {
-                                                                    return <li className='px-3' style={{'margin': '8px'}}><Typography>{ fourthAttr.label }</Typography></li>
-                                                                  }
-                                                                })
-                                                              }
-                                                            </ul>
-                                                          </NestedAccordion> // delete if dont want to show relation without attributes, not parsed because parent is same model
-                                                        : thirdAttr.type === "relation" && contentTypes.filter(content => content.uid === thirdAttr.target)[0]
-                                                          ? <NestedAccordion variant="secondary" title={thirdAttr.label} >
-                                                              <ul>
-                                                                {
-                                                                  contentTypes.filter(content => content.uid === thirdAttr.target)[0].attributes?.map(fourthAttr => <li className='px-3' style={{'margin': '8px'}}><Typography>{ fourthAttr.label }</Typography></li>)
-                                                                }
-                                                              </ul>
-                                                            </NestedAccordion>
-                                                              
-                                                          : <li className='px-3' style={{'margin': '8px'}}><Typography>{ thirdAttr.label }</Typography></li>
-                                                      }
-                                                  </> 
-                                                  
-                                                } else {
-                                                  return <li className='px-3' style={{'margin': '8px'}}><Typography>{ thirdAttr.label }</Typography></li>
-                                                }
-                                              })
-                                            }
-                                          </ul>
-                                        </NestedAccordion>
-                                      : secondAttr.type === "relation" && contentTypes.filter(content => content.uid === secondAttr.target)[0]
-                                        ? <NestedAccordion variant="secondary" title={secondAttr.label} >
-                                            <ul>
-                                              {
-                                                contentTypes.filter(content => content.uid === secondAttr.target)[0].attributes?.map(thirdAttr => <li className='px-3' style={{'margin': '8px'}}><Typography>{ thirdAttr.label }</Typography></li>)
-                                              }
-                                            </ul>
-                                          </NestedAccordion>
-                                            
-                                        : <li className='px-3' style={{'margin': '8px'}}><Typography>{ secondAttr.label }</Typography></li>
-                                  } else {
-                                    return <li className='px-3' style={{'margin': '8px'}}><Typography>{ secondAttr.label }</Typography></li>
-                                  }
-                                })
-                              }
-                            </ul>
-                          </NestedAccordion>
-                        : attr.type === "relation" && contentTypes.filter(content => content.uid === attr.target)[0]
-                          ? <NestedAccordion variant="secondary" title={attr.label} >
-                              <ul>
-                                {
-                                  contentTypes.filter(content => content.uid === attr.target)[0].attributes?.map(secondAttr => <li className='px-3' style={{'margin': '8px'}}><Typography>{ secondAttr.label }</Typography></li>)
-                                }
-                              </ul>
-                            </NestedAccordion>
-                              
-                          : <li style={{'margin': '8px'}}><Typography>{ attr.label }</Typography></li>
-                    } else {
-                      return <li style={{'margin': '8px'}}><Typography>{ attr.label }</Typography></li>
-                    }
-                  })
+            isModalVisible && <ModalLayout onClose={() => setIsModalVisible(prev => !prev)} labelledBy="title">
+              <ModalHeader>
+                <Typography fontWeight="bold" textColor="neutral800" as="h2" id="title">
+                  Title
+                </Typography>
+              </ModalHeader>
+              <ModalBody>
+                <Flex wrap="wrap">
+                  {
+                    components.map((component, i) => {
+                        if (component.category === "sections") {
+                          return <Box padding={2} key={i}>
+                            <BaseButton size="S" variant="secondary" width="130px !important" height="130px !important" key={`components-option-${i}`} onClick={() => { selectComponent(component.apiID); setIsModalVisible(prev => !prev); }}>
+                              <Flex direction="column" justifyContent="center" width="100%">
+                                {/* <Icon as={Component} width="40px" height="40px" /> */}
+                                <Component width="40px" height="40px" />
+                                <Typography fontSize={1}>{component.info.displayName}</Typography>
+                              </Flex>
+                            </BaseButton>
+                          </Box>
+                        } else {
+                          return <></>
+                        }
+                    })
+                  }
+                </Flex>
+              </ModalBody>
+              <ModalFooter endActions={
+                  <Button onClick={() => setIsModalVisible(prev => !prev)} variant="tertiary">
+                    Cancel
+                  </Button>
                 }
-              </ul>
-            </NestedAccordion>
+              />
+            </ModalLayout>
           }
         </>
       }
-        
-      {/* <Accordion expanded={expandedContentID === 'acc-1'} onToggle={handleToggleContent('acc-1')} id="acc-2" variant="secondary">
-            <AccordionToggle title={attr.label} />
-            <AccordionContent>
-              <Box padding={3}>
-                <li className='px-3' style={{'margin': '8px'}}>
-                  { thirdAttr.label }
-                </li>
-                {
-                  thirdAttr.attributes && <ul>
-                    {
-                      thirdAttr.attributes?.map(fourthAttr => {
-                        console.log(fourthAttr);
-                        if (fourthAttr.type === "relation") {
-                          return <>
-                            <li className='px-3' style={{'margin': '8px'}}>
-                              { fourthAttr.label }
-                            </li>
-                          </>
-                          
-                        } else {
-                          return <li className='px-3' style={{'margin': '8px'}}>{ fourthAttr.label }</li>
-                        }
-                      })
-                    }
-                  </ul>
-                  }
-              </Box>
-            </AccordionContent>
-          </Accordion> */}
     </Stack>
   </>
 };
