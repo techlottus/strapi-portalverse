@@ -6,6 +6,12 @@
   },
   "options": {},
   "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
     "slide": {
       "type": "component",
       "repeatable": true,
