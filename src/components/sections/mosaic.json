@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_mosaics",
+  "info": {
+    "displayName": "Mosaic",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "molecules.image"
+    }
+  }
+}
