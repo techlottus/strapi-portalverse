@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_sections_hero_sliders",
+  "collectionName": "components_sections_mosaics",
   "info": {
-    "displayName": "Slider-hero",
+    "displayName": "Mosaic",
     "description": ""
   },
   "options": {},
@@ -12,10 +12,10 @@
     "description": {
       "type": "richtext"
     },
-    "slide": {
+    "images": {
       "type": "component",
       "repeatable": true,
-      "component": "sections.hero"
+      "component": "molecules.image"
     }
   }
 }
