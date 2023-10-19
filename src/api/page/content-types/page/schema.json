@@ -41,6 +41,7 @@
         "sections.programs-filter",
         "sections.promo-link-list",
         "sections.podcast-list",
+        "sections.mosaic",
         "sections.statistics-card-list",
         "sections.overlay-card-list",
         "sections.rich-text-image",
