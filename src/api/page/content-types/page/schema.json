@@ -28,6 +28,7 @@
         "sections.alert",
         "sections.banner",
         "sections.leaderboard",
+        "sections.banner-numeralia",
         "sections.blog-posts-podcast",
         "sections.card-list",
         "sections.contact-target-list",
