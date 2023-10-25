@@ -1,0 +1,49 @@
+{
+  "collectionName": "components_sections_mediaquery_images",
+  "info": {
+    "displayName": "mediaqueryImages",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "desktopImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "tabletImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "mobileImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "desktopRatio": {
+      "type": "string",
+      "regex": "([1-9][0-9]*(.[0-9]*)?)\\/[1-9][0-9]*(.[0-9]*)?",
+      "default": "2/1"
+    },
+    "tabletRatio": {
+      "type": "string",
+      "regex": "([1-9][0-9]*(.[0-9]*)?)\\/[1-9][0-9]*(.[0-9]*)?",
+      "default": "2/1"
+    },
+    "mobileRatio": {
+      "type": "string",
+      "default": "4/3",
+      "regex": "([1-9][0-9]*(.[0-9]*)?)\\/[1-9][0-9]*(.[0-9]*)?"
+    }
+  }
+}

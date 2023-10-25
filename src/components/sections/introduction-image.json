@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_introduction_images",
+  "info": {
+    "displayName": "IntroductionImage",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "images": {
+      "displayName": "mediaqueryImages",
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.mediaquery-images"
+    }
+  }
+}
