@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_repeatable_banners",
+  "info": {
+    "displayName": "RepeatableBanner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "banners": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.banner"
+    }
+  }
+}

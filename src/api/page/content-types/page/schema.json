@@ -28,6 +28,7 @@
         "sections.alert",
         "sections.banner",
         "sections.leaderboard",
+        "sections.banner-numeralia",
         "sections.blog-posts-podcast",
         "sections.card-list",
         "sections.contact-target-list",
@@ -41,9 +42,11 @@
         "sections.programs-filter",
         "sections.promo-link-list",
         "sections.podcast-list",
+        "sections.introduction-image",
         "sections.mosaic",
         "sections.statistics-card-list",
         "sections.overlay-card-list",
+        "sections.repeatable-banner",
         "sections.rich-text-image",
         "sections.rich-text-video",
         "sections.hero-slider",
@@ -52,7 +55,8 @@
         "sections.knowledge-area-filter",
         "sections.modality-filter",
         "sections.program-accordion-list",
-        "sections.rockstar-info-list"
+        "sections.rockstar-info-list",
+        "sections.videos"
       ],
       "required": true
     },

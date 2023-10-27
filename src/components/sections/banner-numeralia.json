@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_sections_banner_numeralias",
+  "info": {
+    "displayName": "BannerNumeralia",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "statistics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.statistics-card",
+      "max": 4
+    },
+    "tabletImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "mobileImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "desktopImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

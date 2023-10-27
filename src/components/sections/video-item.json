@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_video_items",
+  "info": {
+    "displayName": "VideoItem"
+  },
+  "options": {},
+  "attributes": {
+    "providerId": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "enumeration",
+      "enum": [
+        "youtube",
+        "vimeo"
+      ],
+      "default": "youtube"
+    }
+  }
+}
