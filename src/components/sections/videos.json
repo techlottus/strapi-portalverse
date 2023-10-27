@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_videos",
+  "info": {
+    "displayName": "Videos",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "videos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.video-item"
+    }
+  }
+}
