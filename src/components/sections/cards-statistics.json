@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_sections_cards_statistics",
+  "info": {
+    "displayName": "CardsStatistics",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "titleCards": {
+      "type": "string"
+    },
+    "descriptionCards": {
+      "type": "richtext"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.card"
+    },
+    "cardsPosition": {
+      "type": "enumeration",
+      "enum": [
+        "right",
+        "left"
+      ],
+      "default": "left"
+    },
+    "titleStatistics": {
+      "type": "string"
+    },
+    "descriptionStatistics": {
+      "type": "richtext"
+    },
+    "statistics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.statistics-card"
+    }
+  }
+}
