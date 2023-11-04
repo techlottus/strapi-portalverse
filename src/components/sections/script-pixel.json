@@ -36,6 +36,23 @@
     "async": {
       "type": "boolean",
       "default": false
+    },
+    "crossorigin": {
+      "type": "boolean",
+      "default": false
+    },
+    "integrity": {
+      "type": "string"
+    },
+    "strategy": {
+      "type": "enumeration",
+      "enum": [
+        "afterInteractive",
+        "beforeInteractive",
+        "lazyOnload",
+        "worker"
+      ],
+      "default": "afterInteractive"
     }
   }
 }
