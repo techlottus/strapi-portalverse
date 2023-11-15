@@ -57,6 +57,14 @@
       "type": "component",
       "repeatable": false,
       "component": "molecules.button"
+    },
+    "overlay": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "white",
+        "dark"
+      ]
     }
   }
 }
