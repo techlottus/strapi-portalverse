@@ -41,6 +41,15 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "overlay": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "white",
+        "dark"
+      ],
+      "default": "dark"
     }
   }
 }
