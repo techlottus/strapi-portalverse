@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_sections_cards_video_contents",
+  "info": {
+    "displayName": "CardsVideoContent",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "richtext"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.card"
+    },
+    "textPosition": {
+      "type": "enumeration",
+      "enum": [
+        "right",
+        "left"
+      ]
+    },
+    "videoItem": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.video-item"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecules.button"
+    }
+  }
+}
