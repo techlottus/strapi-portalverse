@@ -57,7 +57,9 @@
         "sections.modality-filter",
         "sections.program-accordion-list",
         "sections.rockstar-info-list",
-        "sections.videos"
+        "sections.videos",
+        "sections.cards-detail-content",
+        "sections.cards-video-content"
       ],
       "required": true
     },
