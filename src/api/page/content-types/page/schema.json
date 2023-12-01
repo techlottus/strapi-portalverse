@@ -59,7 +59,8 @@
         "sections.rockstar-info-list",
         "sections.videos",
         "sections.cards-detail-content",
-        "sections.cards-video-content"
+        "sections.cards-video-content",
+        "sections.category-accordion-list"
       ],
       "required": true
     },
