@@ -4,7 +4,8 @@
   "info": {
     "singularName": "modality",
     "pluralName": "modalities",
-    "displayName": "Modality"
+    "displayName": "Modality",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -23,25 +24,34 @@
       "type": "text"
     },
     "desktopImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "tabletImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "mobileImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "modalityCategory": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::modality-category.modality-category",
+      "inversedBy": "modality"
     }
   }
 }

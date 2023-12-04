@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "program_rvoes",
+  "info": {
+    "singularName": "program-rvoe",
+    "pluralName": "program-rvoes",
+    "displayName": "Program RVOE",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "knowledgeArea": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::knowledge-area.knowledge-area"
+    },
+    "modality": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::modality.modality"
+    },
+    "program": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::program.program"
+    },
+    "campus": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::campus.campus"
+    },
+    "relatedCampuses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::campus.campus"
+    }
+  }
+}

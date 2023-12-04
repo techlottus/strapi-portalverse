@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modality_categories",
+  "info": {
+    "singularName": "modality-category",
+    "pluralName": "modality-categories",
+    "displayName": "Modality Category",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "modality": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::modality.modality",
+      "mappedBy": "modalityCategory"
+    },
+    "label": {
+      "type": "string"
+    }
+  }
+}
