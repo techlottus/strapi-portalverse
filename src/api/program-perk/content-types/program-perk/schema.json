@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "program_perks",
+  "info": {
+    "singularName": "program-perk",
+    "pluralName": "program-perks",
+    "displayName": "Program Perk",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "iconName": {
+      "type": "string"
+    },
+    "code": {
+      "type": "string"
+    }
+  }
+}

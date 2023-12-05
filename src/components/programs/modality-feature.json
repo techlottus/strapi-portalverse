@@ -14,6 +14,9 @@
     "labelModality": {
       "type": "string"
     },
+    "modalityDescription": {
+      "type": "text"
+    },
     "admissionProfile": {
       "type": "richtext"
     },
@@ -44,6 +47,11 @@
       "type": "component",
       "repeatable": true,
       "component": "programs.summary"
+    },
+    "programPerks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::program-perk.program-perk"
     }
   }
 }
