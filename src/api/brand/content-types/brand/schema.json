@@ -28,6 +28,9 @@
     },
     "contactPhone": {
       "type": "string"
+    },
+    "contact": {
+      "type": "string"
     }
   }
 }
