@@ -31,6 +31,9 @@
     },
     "contact": {
       "type": "string"
+    },
+    "website": {
+      "type": "string"
     }
   }
 }
