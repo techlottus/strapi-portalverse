@@ -168,6 +168,9 @@
         "años"
       ],
       "default": "horas"
+    },
+    "goals": {
+      "type": "richtext"
     }
   }
 }
