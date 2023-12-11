@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_color_card_lists",
+  "info": {
+    "displayName": "ColorCardList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.color-card"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

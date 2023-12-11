@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_sections_color_cards",
+  "info": {
+    "displayName": "colorCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "classNames": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}
