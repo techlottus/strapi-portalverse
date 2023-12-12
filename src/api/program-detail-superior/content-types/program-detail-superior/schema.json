@@ -4,7 +4,8 @@
   "info": {
     "singularName": "program-detail-superior",
     "pluralName": "program-detail-superiors",
-    "displayName": "Program Detail - Superior"
+    "displayName": "Program Detail - Superior",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,32 +13,36 @@
   "pluginOptions": {},
   "attributes": {
     "admissionProfileImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "graduateProfileImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "laborFieldImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "admissionRequirementsImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "admissionProfileBackgroundColor": {
       "type": "string"
@@ -50,6 +55,14 @@
     },
     "admissionRequirementsBackgroundColor": {
       "type": "string"
+    },
+    "contentVariant": {
+      "type": "enumeration",
+      "enum": [
+        "light",
+        "dark"
+      ],
+      "default": "dark"
     },
     "banner": {
       "type": "component",
