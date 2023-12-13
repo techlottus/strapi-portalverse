@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_category_accordion_lists",
+  "info": {
+    "displayName": "CategoryAccordionList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "CategoryList": {
+      "displayName": "CategoryList",
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.category-list"
+    }
+  }
+}
