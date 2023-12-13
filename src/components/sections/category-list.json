@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_category_lists",
+  "info": {
+    "displayName": "CategoryList"
+  },
+  "options": {},
+  "attributes": {
+    "faq_category": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::faq-category.faq-category"
+    },
+    "label": {
+      "type": "string"
+    },
+    "iconName": {
+      "type": "string"
+    }
+  }
+}
