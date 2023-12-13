@@ -57,6 +57,9 @@
       "repeatable": true,
       "component": "programs.modality-feature"
     },
+    "summary": {
+      "type": "richtext"
+    },
     "admissionProfile": {
       "type": "richtext"
     },
@@ -113,6 +116,61 @@
       "type": "uid",
       "targetField": "name",
       "required": false
+    },
+    "certificationMessage": {
+      "type": "text"
+    },
+    "discountPercentageText": {
+      "type": "string",
+      "default": "de descuento"
+    },
+    "discount": {
+      "type": "integer"
+    },
+    "periodicity": {
+      "type": "enumeration",
+      "enum": [
+        "mes",
+        "año",
+        "bimestre",
+        "semestre",
+        "trimestre",
+        "cuatrimestre"
+      ],
+      "default": "mes"
+    },
+    "checkoutUrlText": {
+      "type": "string"
+    },
+    "relatedPrograms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::program.program"
+    },
+    "programPerks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::program-perk.program-perk"
+    },
+    "salesforceId": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "durationUnit": {
+      "type": "enumeration",
+      "enum": [
+        "horas",
+        "días",
+        "semanas",
+        "meses",
+        "años"
+      ],
+      "default": "horas"
+    },
+    "goals": {
+      "type": "richtext"
     }
   }
 }
