@@ -16,6 +16,11 @@
     },
     "description": {
       "type": "richtext"
+    },
+    "modalities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::modality.modality"
     }
   }
 }
