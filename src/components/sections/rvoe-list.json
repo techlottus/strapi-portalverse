@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_rvoe_lists",
+  "info": {
+    "displayName": "RvoeList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "program_rvoes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::program-rvoe.program-rvoe"
+    },
+    "label": {
+      "type": "string"
+    },
+    "iconName": {
+      "type": "string"
+    }
+  }
+}
