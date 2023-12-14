@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_rvoe_accordion_lists",
+  "info": {
+    "displayName": "RvoeAccordionList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "RvoeList": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.rvoe-list"
+    }
+  }
+}
