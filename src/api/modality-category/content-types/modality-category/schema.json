@@ -15,11 +15,10 @@
     "name": {
       "type": "string"
     },
-    "modality": {
+    "modalities": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::modality.modality",
-      "mappedBy": "modalityCategory"
+      "relation": "oneToMany",
+      "target": "api::modality.modality"
     },
     "label": {
       "type": "string"

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_rvoe_lists",
+  "info": {
+    "displayName": "rvoeList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "iconName": {
+      "type": "string"
+    },
+    "modalityCategory": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::modality-category.modality-category"
+    }
+  }
+}

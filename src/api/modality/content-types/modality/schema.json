@@ -47,11 +47,11 @@
         "images"
       ]
     },
-    "modalityCategory": {
+    "programRvoes": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::modality-category.modality-category",
-      "inversedBy": "modality"
+      "relation": "oneToMany",
+      "target": "api::program-rvoe.program-rvoe",
+      "mappedBy": "modality"
     }
   }
 }
