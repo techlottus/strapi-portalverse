@@ -12,7 +12,7 @@
     "subtitle": {
       "type": "string"
     },
-    "RvoeList": {
+    "rvoeList": {
       "type": "component",
       "repeatable": true,
       "component": "sections.rvoe-list"
