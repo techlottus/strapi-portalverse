@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_icon_text_items",
+  "info": {
+    "displayName": "IconTextItem",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "iconName": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    }
+  }
+}
