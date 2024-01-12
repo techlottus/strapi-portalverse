@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_rich_text_image_bg_images",
+  "info": {
+    "displayName": "RichTextImageBgImage"
+  },
+  "options": {},
+  "attributes": {
+    "backgroundImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "RichTextImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.rich-text-image"
+    }
+  }
+}
