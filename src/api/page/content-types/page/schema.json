@@ -26,6 +26,8 @@
       "components": [
         "sections.accordion",
         "sections.alert",
+        "sections.atr-program-info",
+        "sections.atr-program-perks",
         "sections.banner",
         "sections.leaderboard",
         "sections.banner-numeralia",

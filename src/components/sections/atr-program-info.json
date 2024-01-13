@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sections_atr_program_infos",
+  "info": {
+    "displayName": "AtrProgramInfo"
+  },
+  "options": {},
+  "attributes": {
+    "enabled": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
