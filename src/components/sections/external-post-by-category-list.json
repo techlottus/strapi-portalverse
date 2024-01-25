@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_epcl",
+  "info": {
+    "displayName": "ExternalPostByCategoryList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "externalPostCategories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::extpost-category.extpost-category"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}
