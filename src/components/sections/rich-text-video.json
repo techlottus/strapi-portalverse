@@ -41,6 +41,11 @@
         "Vimeo"
       ],
       "default": "Youtube"
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "molecules.button"
     }
   }
 }
