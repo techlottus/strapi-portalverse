@@ -16,6 +16,9 @@
       "type": "component",
       "repeatable": true,
       "component": "sections.rvoe-list"
+    },
+    "description": {
+      "type": "richtext"
     }
   }
 }

@@ -35,6 +35,11 @@
       "type": "component",
       "repeatable": false,
       "component": "sections.banner"
+    },
+    "feedback": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.alert"
     }
   }
 }
