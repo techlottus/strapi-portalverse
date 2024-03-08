@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_sections_testimonial_sliders",
+  "info": {
+    "displayName": "TestimonialSlider"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "bgImageDesktop": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "bgImageTablet": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "bgImageMobile": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "testimonialCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.testimonial-card"
+    }
+  }
+}
