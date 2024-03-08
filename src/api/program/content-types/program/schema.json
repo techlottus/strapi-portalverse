@@ -179,6 +179,17 @@
     },
     "academicTitleName": {
       "type": "string"
+    },
+    "certifications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::certification.certification"
+    },
+    "certificationsTitle": {
+      "type": "string"
+    },
+    "certificationsDescription": {
+      "type": "richtext"
     }
   }
 }

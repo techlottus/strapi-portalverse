@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_certifications_sliders",
+  "info": {
+    "displayName": "CertificationsSlider"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "certifications": {
+      "displayName": "slideCertifications",
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.slide-certifications"
+    }
+  }
+}
