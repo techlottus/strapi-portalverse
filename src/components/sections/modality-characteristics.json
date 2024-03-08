@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_modality_characteristics",
+  "info": {
+    "displayName": "modalityCharacteristics",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "InformativeIcons": {
+      "displayName": "informativeIcon",
+      "type": "component",
+      "repeatable": true,
+      "component": "molecules.informative-icon"
+    },
+    "subtitle": {
+      "type": "richtext"
+    }
+  }
+}

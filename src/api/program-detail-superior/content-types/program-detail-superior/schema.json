@@ -68,6 +68,27 @@
       "type": "component",
       "repeatable": false,
       "component": "sections.banner"
+    },
+    "richTextImage": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.rich-text-image"
+    },
+    "rvoeTitle": {
+      "type": "string"
+    },
+    "rvoeDescription": {
+      "type": "richtext"
+    },
+    "rvoeImages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "molecules.image"
+    },
+    "certifications": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.certifications-slider"
     }
   }
 }

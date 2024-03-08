@@ -67,7 +67,8 @@
         "sections.cards-video-content",
         "sections.rvoe-accordion-list",
         "sections.category-accordion-list",
-        "sections.external-post-by-category-list"
+        "sections.external-post-by-category-list",
+        "sections.testimonial-slider"
       ],
       "required": true
     },

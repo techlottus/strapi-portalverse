@@ -171,6 +171,25 @@
     },
     "goals": {
       "type": "richtext"
+    },
+    "testimonials": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.testimonial-slider"
+    },
+    "academicTitleName": {
+      "type": "string"
+    },
+    "certifications": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::certification.certification"
+    },
+    "certificationsTitle": {
+      "type": "string"
+    },
+    "certificationsDescription": {
+      "type": "richtext"
     }
   }
 }
