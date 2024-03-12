@@ -85,10 +85,10 @@
       "repeatable": true,
       "component": "molecules.image"
     },
-    "certifications": {
+    "richTextImageCertifications": {
       "type": "component",
       "repeatable": false,
-      "component": "sections.certifications-slider"
+      "component": "sections.rich-text-image"
     }
   }
 }

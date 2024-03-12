@@ -182,8 +182,9 @@
     },
     "certifications": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::certification.certification"
+      "relation": "manyToMany",
+      "target": "api::certification.certification",
+      "inversedBy": "programs"
     },
     "certificationsTitle": {
       "type": "string"
