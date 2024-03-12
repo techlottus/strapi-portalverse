@@ -20,6 +20,12 @@
     },
     "name": {
       "type": "string"
+    },
+    "programs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::program.program",
+      "inversedBy": "certifications"
     }
   }
 }
