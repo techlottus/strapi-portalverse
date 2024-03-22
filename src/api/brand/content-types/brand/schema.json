@@ -34,6 +34,9 @@
     },
     "website": {
       "type": "string"
+    },
+    "about": {
+      "type": "richtext"
     }
   }
 }

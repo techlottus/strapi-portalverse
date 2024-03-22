@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "certifications",
+  "info": {
+    "singularName": "certification",
+    "pluralName": "certifications",
+    "displayName": "Certification"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "imgCertification": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "name": {
+      "type": "string"
+    },
+    "programs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::program.program",
+      "inversedBy": "certifications"
+    }
+  }
+}

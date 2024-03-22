@@ -52,6 +52,12 @@
       "relation": "oneToMany",
       "target": "api::program-rvoe.program-rvoe",
       "mappedBy": "modality"
+    },
+    "Characteristics": {
+      "displayName": "modalityCharacteristics",
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.modality-characteristics"
     }
   }
 }
