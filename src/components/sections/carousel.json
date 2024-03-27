@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_sections_carousels",
+  "info": {
+    "displayName": "Carousel",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "card",
+        "image"
+      ],
+      "default": "card",
+      "required": true
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.card"
+    },
+    "backgroundColor": {
+      "type": "string"
+    },
+    "origin": {
+      "type": "enumeration",
+      "enum": [
+        "center",
+        "auto"
+      ],
+      "default": "center"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.mediaquery-images"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecules.button"
+    }
+  }
+}

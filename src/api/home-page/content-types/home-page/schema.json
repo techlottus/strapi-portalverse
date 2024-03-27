@@ -26,6 +26,7 @@
       "components": [
         "sections.banner",
         "sections.blog-post-list",
+        "sections.carousel",
         "sections.overlay-card-list",
         "sections.entryconfig",
         "sections.faq-section",
