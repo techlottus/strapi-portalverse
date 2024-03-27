@@ -16,8 +16,7 @@
       "type": "enumeration",
       "enum": [
         "card",
-        "image",
-        "video"
+        "image"
       ],
       "default": "card",
       "required": true
@@ -42,11 +41,6 @@
       "type": "component",
       "repeatable": true,
       "component": "sections.mediaquery-images"
-    },
-    "videos": {
-      "type": "component",
-      "repeatable": true,
-      "component": "sections.video-item"
     },
     "button": {
       "type": "component",
