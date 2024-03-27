@@ -25,7 +25,7 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::program.program",
-      "inversedBy": "certifications"
+      "mappedBy": "certifications"
     }
   }
 }
