@@ -24,6 +24,7 @@
     "sections": {
       "type": "dynamiczone",
       "components": [
+        "sections.container-text-form",
         "sections.accordion",
         "sections.alert",
         "sections.atr-program-info",

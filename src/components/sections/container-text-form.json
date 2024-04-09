@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_sections_container_text_forms",
+  "info": {
+    "displayName": "container-text-form",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "desktopBgImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "tabletBgImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "mobileBgImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "title_accents": {
+      "displayName": "text",
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.text"
+    },
+    "form": {
+      "displayName": "Container-form",
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.form-container"
+    }
+  }
+}
