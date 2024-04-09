@@ -10,7 +10,6 @@ const name = pluginPkg.strapi.name;
 
 export default {
   register(app) {
-    app
     app.customFields.register({
       name: "api-select",
       pluginId: "fetch-content", 

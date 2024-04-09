@@ -5,8 +5,9 @@
  */
 
 import React, { useEffect, useState } from 'react';
-import { Box, Accordion, AccordionToggle, AccordionContent, IconButton, SingleSelect, SingleSelectOption, Flex, Typography } from '@strapi/design-system';
+import { Box, Accordion, AccordionToggle, AccordionContent, IconButton, SingleSelect, SingleSelectOption, Flex, Typography, Switch, TextInput } from '@strapi/design-system';
 import NestedAccordion from '../NestedAccordion';
+import MultiLevelSelect from '../MultiLevelSelect';
 export default function NestedAccordionSelect({
   attr,
   filterComponent,
@@ -15,79 +16,98 @@ export default function NestedAccordionSelect({
   sendValue,
   parent
 }) {
-
   const [selected, setSelected] = useState(null);
   const [component, setComponent] = useState(null);
   const [content, setContent] = useState(null);
-  const [value, setValue] = useState(null);
-  useEffect(() => {
-    // console.log('selectedContent: ', selectedContent);
-    if (selected) {
-      
-      console.log(`selected from parent ${parent.label} child ${attr.label}: `, selected);
-      const data = prepareValue()
-      console.log('data: ', data);
+  const [value, setValue] = useState(attr.value || null);
+  const [related, setRelated] = useState(attr.related === undefined ? true : attr.related);
 
-      sendValue(data)
+
+
+
+  useEffect(() => {
+    // console.log('selected: ', selected);
+    if (selected) {
+      // console.log('value: ', value);
+      // console.log('selected: ', selected);
+      
+      // console.log(`selected from parent ${parent.label} child ${attr.label}: `, selected);
+      const data = prepareValue()
+      // console.log('data: ', data);
+      if (data) {
+        // console.log('data: ', data);
+        
+        sendValue(data)
+      }
     }
 
-  }, [selected])
+  }, [selected, related])
   
   useEffect(() => {
-    console.log('attr: ', attr)
-    if (attr.type === "component") {
-      setComponent({...attr, ...filterComponent(attr.component)})
-      if (attr.attributes) {
-        setComponent(attr)
-        // setComponent({...filterComponent(attr.component), ...attr})
-      } else {
+      // setfirstRun(false)
+      // console.log('attr: ', attr)
+      if (attr.type === "component") {
+        if (attr.attributes) {
+          setComponent(attr)
+          // setComponent({...filterComponent(attr.component), ...attr})
+        } else {
+          setComponent({...attr, ...filterComponent(attr.component)})
+        }
+      } else if (attr.type === "relation") {
+        if (attr.attributes) {
+          setContent(attr)
+          // setContent({...filterContent({uid: attr.targetModel}), ...attr})
+        } else {
+          setContent({...attr, ...filterContent({uid: attr.targetModel})})
+        }
       }
-    } else if (attr.type === "relation") {
-      setContent({...attr, ...filterContent({uid: attr.targetModel})})
-      if (attr.attributes) {
-        setContent(attr)
-        // setContent({...filterContent({uid: attr.targetModel}), ...attr})
-      } else {
-      }
-    }
 
-  }, [attr])
+  }, [])
   useEffect(() => {
     if (value) {
       // console.log(`${ attr?.label } parent: `, parent)
       // console.log(`${ value?.label } value: `, value)
-      console.log(`value: `, value);
+      // console.log(`value: `, value);
       // parent.attributes[value.index] = value
-      const child = setChild(value)
-      console.log(`parent: `, parent)
+      let child 
+      // console.log(`parent: `, parent)
       
-      console.log(`child: `, child);
-      console.log(`selected: `, selected);
-      
-      if ( parent.first ) {
-        sendValue({  ...child, parentIndex: parent.index  })
+      // console.log(`child: `, child);
+      // console.log(`selected: `, selected);
 
-      } else {
-
+      if (parent.type === "component" || parent.type === "relation" || value.type === "component" || value.type === "relation") {
+        parent.attributes[value.index] = value
         sendValue(parent)
+  
+      } else {
+        child =  {...value, parentIndex: parent.index }
+        sendValue(child)
       }
+
+
+
     }
     
   }, [value])
   
   const prepareValue = () => {
-    console.groupCollapsed(`preparing value: ${value}, in attr: ${attr.label}, from: ${parent.label}:`)
-    console.log('attr: ', attr);
-    attr.value = [selected]
-    console.log('parent: ', parent);
-    // parent.attributes[attr.index] = attr
-    if (parent.type === "component" || parent.type === "relation") {
-        console.log(`parent ${ parent.type }: `, parent);
-        parent.attributes[attr.index] = attr
-        console.groupEnd()
-        return parent
-
-    }
+    // console.groupCollapsed(`preparing value: ${selected}, in attr: ${attr.label}, from: ${parent.label}:`)
+    // console.log('attr: ', attr);
+    // console.log('typeof selected: ', typeof selected);
+    // if (attr.related !== related || attr.value !== selected) {
+      
+      attr.related = related
+      attr.value = selected
+      if (parent?.type === "component" || parent?.type === "relation") {
+        // console.log('parent: ', parent);
+          // console.log(`parent ${ parent.type }: `, parent);
+          parent.attributes[attr.index] = attr
+          // console.groupEnd()
+          return parent
+  
+      }
+      return {  ...attr, parentIndex: parent.index  }
+    // }
     // if(parent.type === "relation") {
     //   console.log('parent: ', parent);
     //   // content.attributes[attr.index] = attr
@@ -100,24 +120,20 @@ export default function NestedAccordionSelect({
     //   console.groupEnd()
     //   return {  ...content, parentIndex: parent.index  }
     // }
-    console.groupEnd()
-    // attr.attributes[prop.index] = prop
-    return {  ...attr, parentIndex: parent.index  }
-    // console.log(response)
-    return response
+    // console.groupEnd()
   }
 
 
-  const setChild = (child) => {
+  // const setChild = (child) => {
 
-    if (parent.type === "component" || parent.type === "relation" || child.type === "component" || child.type === "relation") {
-      parent.attributes[child.index] = child
-      return child
+  //   if (parent.type === "component" || parent.type === "relation" || child.type === "component" || child.type === "relation") {
+  //     parent.attributes[child.index] = child
+  //     return parent
 
-    } else {
-      return {...child, parentIndex: parent.index }
-    }
-  }
+  //   } else {
+  //     return {...child, parentIndex: parent.index }
+  //   }
+  // }
 
 
   return <>
@@ -129,7 +145,7 @@ export default function NestedAccordionSelect({
                 return <NestedAccordionSelect
                   key={ `${component?.apiID}-attr${j}` }
                   attr={ {...innerAttr, index: j} }
-                  parent={ { ...component, index: component.index } }
+                  parent={ { ...component, index: component.index, first: false } }
                   filterContent={ filterContent }
                   filterComponent={ filterComponent }
                   selectedContent={ selectedContent }
@@ -145,7 +161,7 @@ export default function NestedAccordionSelect({
                   return <NestedAccordionSelect
                     key={ `${content?.label}-attr${j}` }
                     attr={ {...innerAttr, index: j} }
-                    parent={ { ...content, index: content.index } }
+                    parent={ { ...content, index: content.index, first: false } }
                     filterContent={ filterContent }
                     filterComponent={ filterComponent }
                     selectedContent={ selectedContent }
@@ -154,29 +170,53 @@ export default function NestedAccordionSelect({
                 })
               }
             </NestedAccordion>
-        // : attr.type === "enumeration"
-        //   ? <SingleSelect onChange={setSelected} value={selected} key={j} label={attr.label} required placeholder="Select a content type" hint="Content type is used to get attributes and generate its variables">
-        //       {
-        //         attr.enum.map((label, k) => <SingleSelectOption key={`contents-option-${k}`} value={label}>{label}</SingleSelectOption>)
-        //       }
-        //     </SingleSelect>
           : ( attr.label !== "id" && attr.label !== "createdBy" && attr.label !== "updatedBy" )
-            ?
-              // <>
-              //   <Typography>{attr.label}</Typography>
-              //   <Flex>
-              //     <MultiLevelSelect key={j} label={selectedContent.label} attributes={filterContent({apiID:selectedContent})?.attributes} filterContent={filterContent} filterComponent={filterComponent}></MultiLevelSelect>
-              //   </Flex>
-              // </>
-              <SingleSelect
-                onChange={setSelected}
-                value={attr.value[0]}
-                label={attr.label}
-              >
+            ? <Box borderColor="primary200" padding={1} borderRadius="4px">
+                <Flex direction="row" width={64} justifyContent="space-between">
+                  <Flex>
+                    <Box paddingRight={1}>
+
+                      <Typography variant="epsilon" paddingRight="8px">{attr.label}</Typography>
+                    </Box>
+                    <Box>
+
+                    
+                    <Typography paddingLeft="8px" variant="pi">type: {attr.type}</Typography>
+                    </Box>
+                  </Flex>
+                  <Box>
+
+                    <Switch onLabel='Related' offLabel = 'Manual' selected={related} onChange={() => setRelated(s => !s)} visibleLabels />;
+                  </Box>
+
+                  {/* <Typography>agregar valor</Typography> */}
+                </Flex>
+                
                 {
-                  selectedContent?.attributes?.map((contentAttr, k) => <SingleSelectOption key={`contents-option-${k}`} value={contentAttr.label}>{contentAttr.label}</SingleSelectOption>)
+                  related 
+                  ? <Flex>
+                      <MultiLevelSelect
+                        showAttrTypes={['relation', 'component']}
+                        allowedTypes={['relation', 'component', attr.type]}
+                        value={attr.value}
+                        label={`${selectedContent.apiID} attributes`}
+                        onChange={setSelected}
+                        attributes={selectedContent?.attributes}
+                        filterContent={filterContent}
+                        filterComponent={filterComponent}
+                        parentResponse={attr.value}
+                      />
+                    </Flex>
+                  : attr.type === "enumeration"
+                    ? <SingleSelect onChange={e => setSelected([e])} value={attr.value[0]} label={attr.label} required placeholder="Select a content type" hint="Content type is used to get attributes and generate its variables">
+                        {
+                          attr.enum.map((label, k) => <SingleSelectOption key={`contents-option-${k}`} value={label}>{label}</SingleSelectOption>)
+                        }
+                      </SingleSelect>
+                    : <TextInput onChange={e => setSelected([e.target.value])} value={attr.value} label={attr.label} required placeholder="Select a content type" hint="Content type is used to get attributes and generate its variables" />
+  
                 }
-              </SingleSelect>
+              </Box>
             : <></> 
     }
   </>

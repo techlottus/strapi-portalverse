@@ -12,6 +12,7 @@ export default function NestedAccordion({
   variant,
   expand = false,
   handleDelete,
+  showDelete = true,
   title,
   children
 }) {
@@ -34,9 +35,9 @@ export default function NestedAccordion({
 
   // setSelected
 
-  return <Accordion expanded={expanded} onToggle={() => setExpanded(s => !s)}  variant={variant}>
+  return <Accordion borderColor="primary100" expanded={expanded} onToggle={() => setExpanded(s => !s)}  variant={variant} size="SM">
     {
-      handleDelete
+      handleDelete && showDelete
         ? <AccordionToggle title={title} action={<IconButton onClick={handleDelete} label="Delete" icon={<Trash />} />} />
         : <AccordionToggle title={title} />
     }
