@@ -152,7 +152,7 @@
       "relation": "oneToMany",
       "target": "api::program-perk.program-perk"
     },
-    "salesforceId": {
+    "nombreProgramaSalesforce": {
       "type": "string"
     },
     "duration": {
