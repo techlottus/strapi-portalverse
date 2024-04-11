@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_atoms_texts",
+  "info": {
+    "displayName": "text"
+  },
+  "options": {},
+  "attributes": {
+    "accent": {
+      "type": "string"
+    }
+  }
+}
