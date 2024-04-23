@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_atoms_level_texts",
+  "info": {
+    "displayName": "level-text"
+  },
+  "options": {},
+  "attributes": {
+    "level": {
+      "type": "string"
+    }
+  }
+}
