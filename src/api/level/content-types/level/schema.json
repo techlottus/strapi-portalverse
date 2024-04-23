@@ -55,6 +55,12 @@
       "relation": "oneToMany",
       "target": "api::program.program",
       "mappedBy": "level"
+    },
+    "SFlevels": {
+      "displayName": "level-text",
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.level-text"
     }
   }
 }

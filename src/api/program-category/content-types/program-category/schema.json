@@ -1,5 +1,4 @@
 {
-  "kind": "collectionType",
   "collectionName": "program_categories",
   "info": {
     "singularName": "program-category",
@@ -21,5 +20,6 @@
       "target": "api::program.program",
       "mappedBy": "programCategory"
     }
-  }
+  },
+  "kind": "collectionType"
 }
