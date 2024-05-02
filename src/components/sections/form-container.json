@@ -38,8 +38,13 @@
       "type": "enumeration",
       "enum": [
         "Clinicas Dentales",
-        "Doble Titulacion"
+        "Doble Titulacion",
+        "Agendar visita",
+        "Acreditate"
       ]
+    },
+    "prefilledData": {
+      "type": "json"
     },
     "position": {
       "type": "enumeration",
