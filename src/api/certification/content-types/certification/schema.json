@@ -1,5 +1,4 @@
 {
-  "kind": "collectionType",
   "collectionName": "certifications",
   "info": {
     "singularName": "certification",
@@ -27,5 +26,6 @@
       "target": "api::program.program",
       "mappedBy": "certifications"
     }
-  }
+  },
+  "kind": "collectionType"
 }

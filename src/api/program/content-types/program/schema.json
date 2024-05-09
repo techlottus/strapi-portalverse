@@ -1,5 +1,4 @@
 {
-  "kind": "collectionType",
   "collectionName": "programs",
   "info": {
     "singularName": "program",
@@ -194,6 +193,12 @@
     },
     "admissionRequirements": {
       "type": "richtext"
+    },
+    "price_list": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.prices"
     }
-  }
+  },
+  "kind": "collectionType"
 }
