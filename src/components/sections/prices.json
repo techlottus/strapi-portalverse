@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_sections_prices",
+  "info": {
+    "displayName": "prices",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "accents": {
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.text"
+    },
+    "general_perks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.text"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "price": {
+      "displayName": "price_card",
+      "type": "component",
+      "repeatable": true,
+      "component": "molecules.price-card"
+    }
+  }
+}
