@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_molecules_price_cards",
+  "info": {
+    "displayName": "price_card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "perks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.text"
+    },
+    "discount": {
+      "type": "integer",
+      "max": 100
+    },
+    "checkout_url": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "discounted_price": {
+      "type": "decimal"
+    },
+    "total_payment": {
+      "type": "decimal"
+    },
+    "periodicity": {
+      "type": "string"
+    },
+    "featured_price": {
+      "type": "boolean",
+      "default": false
+    },
+    "payment_provider_image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

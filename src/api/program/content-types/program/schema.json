@@ -194,6 +194,17 @@
     },
     "admissionRequirements": {
       "type": "richtext"
+    },
+    "price_list": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.prices"
+    },
+    "program_rvoes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::program-rvoe.program-rvoe",
+      "mappedBy": "program"
     }
   }
 }
