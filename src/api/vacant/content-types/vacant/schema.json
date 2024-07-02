@@ -40,7 +40,7 @@
     "publication_date": {
       "type": "date"
     },
-    "slug": {
+    "redirect": {
       "type": "uid",
       "targetField": "title"
     }
