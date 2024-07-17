@@ -53,6 +53,12 @@
     },
     "config": {
       "type": "json"
+    },
+    "partiality_price": {
+      "type": "biginteger"
+    },
+    "partialities_number": {
+      "type": "integer"
     }
   }
 }
