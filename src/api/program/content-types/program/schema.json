@@ -205,6 +205,14 @@
       "relation": "oneToMany",
       "target": "api::program-rvoe.program-rvoe",
       "mappedBy": "program"
+    },
+    "HasRvoe": {
+      "type": "boolean"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
     }
   }
 }

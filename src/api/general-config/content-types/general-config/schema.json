@@ -22,6 +22,11 @@
       "type": "component",
       "repeatable": false,
       "component": "misc.send-whatsapp"
+    },
+    "robots": {
+      "type": "component",
+      "repeatable": true,
+      "component": "atoms.text"
     }
   }
 }
