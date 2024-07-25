@@ -39,7 +39,8 @@
         "sections.statistics-card",
         "sections.text-image",
         "sections.image-card-list",
-        "sections.promo-link-list"
+        "sections.promo-link-list",
+        "sections.text-content"
       ]
     },
     "seo": {
