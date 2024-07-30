@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_sections_tabs",
+  "info": {
+    "displayName": "tab",
+    "icon": "stack"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "textImage": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.text-image"
+    }
+  }
+}
