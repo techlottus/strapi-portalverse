@@ -12,7 +12,7 @@
     "subtitle": {
       "type": "text"
     },
-    "goTopBanner": {
+    "overFlowForm": {
       "type": "boolean"
     }
   }
