@@ -12,7 +12,7 @@
     "subtitle": {
       "type": "text"
     },
-    "overFlowForm": {
+    "overflowForm": {
       "type": "boolean"
     }
   }
