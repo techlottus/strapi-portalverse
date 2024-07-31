@@ -1,5 +1,5 @@
 {
-  "collectionName": "components_sections_tabs_lists",
+  "collectionName": "components_organisms_tabs_lists",
   "info": {
     "displayName": "Container-TabList",
     "description": ""
@@ -9,7 +9,7 @@
     "tabs": {
       "type": "component",
       "repeatable": true,
-      "component": "sections.tab"
+      "component": "organisms.tab"
     }
   }
 }
