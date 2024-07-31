@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_graduates_forms",
+  "info": {
+    "displayName": "GraduatesForm",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "overflowForm": {
+      "type": "boolean"
+    }
+  }
+}

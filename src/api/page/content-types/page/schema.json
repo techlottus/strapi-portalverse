@@ -70,7 +70,9 @@
         "sections.rvoe-accordion-list",
         "sections.category-accordion-list",
         "sections.external-post-by-category-list",
-        "sections.testimonial-slider"
+        "sections.testimonial-slider",
+        "sections.graduates-form",
+        "sections.tab-list"
       ],
       "required": true
     },
