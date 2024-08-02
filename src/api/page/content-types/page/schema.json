@@ -72,7 +72,8 @@
         "sections.external-post-by-category-list",
         "sections.testimonial-slider",
         "sections.graduates-form",
-        "organisms.tab-list"
+        "organisms.tab-list",
+        "sections.video-image"
       ],
       "required": true
     },
