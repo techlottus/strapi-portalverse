@@ -73,6 +73,7 @@
         "sections.testimonial-slider",
         "sections.graduates-form",
         "organisms.tab-list",
+        "sections.video-image",
         "sections.banner-cards"
       ],
       "required": true
