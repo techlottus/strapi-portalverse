@@ -1,0 +1,61 @@
+{
+  "collectionName": "components_sections_banner_cards",
+  "info": {
+    "displayName": "BannerCards",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cardIconItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.card-icon"
+    },
+    "desktopImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tabletImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "mobileImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "overlay": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "dark",
+        "white"
+      ]
+    },
+    "backgroundColor": {
+      "type": "string",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+    }
+  }
+}
