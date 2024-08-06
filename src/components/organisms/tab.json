@@ -27,6 +27,11 @@
       "type": "component",
       "repeatable": true,
       "component": "sections.rich-text-video"
+    },
+    "bannerIconCard":{
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.banner-cards"
     }
 
   }
