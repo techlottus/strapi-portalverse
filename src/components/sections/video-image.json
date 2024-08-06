@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_sections_video_images",
+  "info": {
+    "displayName": "videoImage"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "images": {
+      "type": "component",
+      "repeatable": true,
+      "component": "molecules.image"
+    },
+    "Video": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.video-item"
+    },
+    "Button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecules.button"
+    }
+  }
+}

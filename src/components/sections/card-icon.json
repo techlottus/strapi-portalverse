@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_card_icons",
+  "info": {
+    "displayName": "CardIcon",
+    "icon": "picture",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "IconName": {
+      "type": "string"
+    },
+    "RichText": {
+      "type": "richtext"
+    },
+    "iconColor": {
+      "type": "string",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+    }
+  }
+}
