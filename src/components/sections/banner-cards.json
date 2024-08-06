@@ -45,10 +45,6 @@
         "audios"
       ]
     },
-    "backgroundColor": {
-      "type": "string",
-      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
-    },
     "button": {
       "type": "component",
       "repeatable": false,
