@@ -14,7 +14,8 @@
       "type": "enumeration",
       "enum": [
         "richtextImage",
-        "richtextVideo"
+        "richtextVideo",
+        "bannerIconCard"
       ],
       "default": "richtextImage"
     },
@@ -27,6 +28,11 @@
       "type": "component",
       "repeatable": true,
       "component": "sections.rich-text-video"
+    },
+    "bannerIconCard":{
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.banner-cards"
     }
 
   }

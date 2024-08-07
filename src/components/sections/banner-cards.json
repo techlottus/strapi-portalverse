@@ -1,7 +1,7 @@
 {
   "collectionName": "components_sections_banner_cards",
   "info": {
-    "displayName": "BannerCards",
+    "displayName": "BannerIconCard",
     "icon": "apps",
     "description": ""
   },
@@ -44,10 +44,6 @@
         "videos",
         "audios"
       ]
-    },
-    "backgroundColor": {
-      "type": "string",
-      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
     },
     "button": {
       "type": "component",
