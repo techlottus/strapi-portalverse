@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_sections_faq_images",
+  "info": {
+    "displayName": "faqImage",
+    "icon": "dashboard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.faq-section"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecules.button"
+    }
+  }
+}

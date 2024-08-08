@@ -74,7 +74,8 @@
         "sections.graduates-form",
         "organisms.tab-list",
         "sections.video-image",
-        "sections.banner-cards"
+        "sections.banner-cards",
+        "sections.faq-image"
       ],
       "required": true
     },
