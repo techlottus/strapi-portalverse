@@ -18,6 +18,14 @@
         "images"
       ]
     },
+    "imgPosition": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "right"
+      ],
+      "default": "right"
+    },
     "faq": {
       "type": "component",
       "repeatable": false,
