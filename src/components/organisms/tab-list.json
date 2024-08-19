@@ -6,6 +6,9 @@
   },
   "options": {},
   "attributes": {
+    "title": {
+      "type":"string"
+    },
     "tabs": {
       "type": "component",
       "repeatable": true,
