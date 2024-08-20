@@ -19,7 +19,7 @@
       "type": "enumeration",
       "enum": [
         "center",
-        "left top"
+        "left"
       ],
       "required": false,
       "default": "center"
