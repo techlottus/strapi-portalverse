@@ -6,6 +6,24 @@
   },
   "options": {},
   "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "accent_title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "textAlign": {
+      "type": "enumeration",
+      "enum": [
+        "center",
+        "left"
+      ],
+      "required": false,
+      "default": "center"
+    },
     "tabs": {
       "type": "component",
       "repeatable": true,
