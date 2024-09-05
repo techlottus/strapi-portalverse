@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_organisms_footer_sections",
+  "info": {
+    "displayName": "footerSection",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "boolean",
+      "default": false
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.link"
+    },
+    "position": {
+      "type": "enumeration",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ],
+      "default": "left"
+    },
+    "social_medias": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::social-media.social-media"
+    },
+    "columns": {
+      "displayName": "footerColumn",
+      "type": "component",
+      "repeatable": true,
+      "component": "molecules.footer-column",
+      "max": 4
+    }
+  }
+}

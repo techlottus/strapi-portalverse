@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_molecules_info_alerts",
+  "info": {
+    "displayName": "info-alert"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.link"
+    }
+  }
+}
