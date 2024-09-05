@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "layouts",
+  "info": {
+    "singularName": "layout",
+    "pluralName": "layouts",
+    "displayName": "layout",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "header": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::header.header",
+      "inversedBy": "layouts"
+    },
+    "footer": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::footer.footer",
+      "inversedBy": "layouts"
+    },
+    "default": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
