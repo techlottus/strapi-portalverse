@@ -10,7 +10,13 @@
       "type": "string",
       "required": true
     },
-    "subitems": {
+    "href": {
+      "type": "string"
+    },
+    "linkText": {
+      "type": "string"
+    },
+    "items": {
       "displayName": "submenu_item",
       "type": "component",
       "repeatable": true,
