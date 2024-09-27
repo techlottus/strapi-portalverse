@@ -15,17 +15,6 @@
     "name": {
       "type": "string"
     },
-    "show_logo": {
-      "type": "boolean",
-      "default": true
-    },
-    "links_button": {
-      "type": "dynamiczone",
-      "components": [
-        "molecules.button",
-        "sections.link"
-      ]
-    },
     "menu_items": {
       "displayName": "menu_item",
       "type": "component",
@@ -38,22 +27,33 @@
       "target": "api::layout.layout",
       "mappedBy": "header"
     },
-    "banners": {
-      "type": "component",
-      "repeatable": false,
-      "component": "sections.repeatable-banner"
-    },
     "alert": {
       "displayName": "info-alert",
       "type": "component",
       "repeatable": false,
       "component": "molecules.info-alert"
     },
-    "social_medias": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::social-media.social-media",
-      "inversedBy": "headers"
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.link"
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "molecules.button"
+    },
+    "banners": {
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.banner",
+      "max": 2
+    },
+    "linkText": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
     }
   }
 }
