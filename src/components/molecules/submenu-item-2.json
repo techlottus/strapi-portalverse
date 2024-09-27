@@ -1,7 +1,8 @@
 {
   "collectionName": "components_molecules_submenu_item_2s",
   "info": {
-    "displayName": "submenu_item_2"
+    "displayName": "submenu_item_2",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -12,10 +13,20 @@
       "type": "boolean",
       "default": false
     },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "_self",
+        "_blank"
+      ]
+    },
+    "linkText": {
+      "type": "string"
+    },
     "href": {
       "type": "string"
     },
-    "subitems": {
+    "items": {
       "displayName": "submenu_item_3",
       "type": "component",
       "repeatable": true,

@@ -15,6 +15,9 @@
     "href": {
       "type": "string"
     },
+    "linkText": {
+      "type": "string"
+    },
     "items": {
       "displayName": "submenu_item_2",
       "type": "component",
