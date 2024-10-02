@@ -31,6 +31,12 @@
     "default": {
       "type": "boolean",
       "default": false
+    },
+    "pages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::page.page",
+      "mappedBy": "layout"
     }
   }
 }

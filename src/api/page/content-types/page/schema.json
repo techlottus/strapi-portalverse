@@ -21,6 +21,12 @@
     "breadcrumb": {
       "type": "string"
     },
+    "layout": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::layout.layout",
+      "inversedBy": "pages"
+    },
     "sections": {
       "type": "dynamiczone",
       "components": [
@@ -84,5 +90,6 @@
       "repeatable": false,
       "component": "shared.seo"
     }
+
   }
 }
