@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_molecules_submenu_item_3s",
+  "info": {
+    "displayName": "submenu_item_3",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "bold": {
+      "type": "boolean",
+      "default": false
+    },
+    "href": {
+      "type": "string"
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "_self",
+        "_blank"
+      ]
+    }
+  }
+}

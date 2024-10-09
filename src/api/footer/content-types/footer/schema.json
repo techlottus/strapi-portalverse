@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "footer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "layouts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::layout.layout",
+      "mappedBy": "footer"
+    },
+    "footerSection": {
+      "displayName": "footerSection",
+      "type": "component",
+      "repeatable": true,
+      "component": "organisms.footer-section"
+    }
+  }
+}

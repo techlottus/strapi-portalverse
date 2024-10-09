@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_molecules_menu_layouts",
+  "info": {
+    "displayName": "menu_layout"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

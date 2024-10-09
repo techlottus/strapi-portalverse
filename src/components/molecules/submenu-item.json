@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_molecules_submenu_items",
+  "info": {
+    "displayName": "submenu_item"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "bold": {
+      "type": "boolean",
+      "default": false
+    },
+    "href": {
+      "type": "string"
+    },
+    "linkText": {
+      "type": "string"
+    },
+    "items": {
+      "displayName": "submenu_item_2",
+      "type": "component",
+      "repeatable": true,
+      "component": "molecules.submenu-item-2"
+    }
+  }
+}

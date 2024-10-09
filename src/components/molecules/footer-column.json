@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_molecules_footer_columns",
+  "info": {
+    "displayName": "footerColumn",
+    "description": ""
+  },
+  "options": {},
+   "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "molecules.submenu-item-3"
+    }
+  }
+}
