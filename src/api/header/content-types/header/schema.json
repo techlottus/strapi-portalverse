@@ -54,6 +54,12 @@
     },
     "href": {
       "type": "string"
+    },
+    "social_media": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::social-media.social-media",
+      "inversedBy": "headers"
     }
   }
 }

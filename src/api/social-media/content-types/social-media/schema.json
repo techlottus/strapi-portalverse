@@ -23,6 +23,12 @@
     },
     "href": {
       "type": "string"
+    },
+    "headers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::header.header",
+      "mappedBy": "social_media"
     }
   }
 }

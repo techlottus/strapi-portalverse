@@ -26,6 +26,12 @@
       "type": "component",
       "repeatable": true,
       "component": "organisms.footer-section"
+    },
+    "phone": {
+      "displayName": "phone",
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.phone"
     }
   }
 }
