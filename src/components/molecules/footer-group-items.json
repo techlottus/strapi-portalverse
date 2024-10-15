@@ -1,7 +1,8 @@
 {
   "collectionName": "components_molecules_footer_group_items",
   "info": {
-    "displayName": "footerGroupItems"
+    "displayName": "footerGroupItems",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -16,7 +17,8 @@
       "enum": [
         "_self",
         "_blank"
-      ]
+      ],
+      "default": "_self"
     },
     "items": {
       "type": "component",
