@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_molecules_footer_group_items",
+  "info": {
+    "displayName": "footerGroupItems"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "href": {
+      "type": "string"
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "_self",
+        "_blank"
+      ]
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "molecules.submenu-item-3"
+    }
+  }
+}

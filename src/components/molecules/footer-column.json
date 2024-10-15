@@ -6,10 +6,10 @@
   },
   "options": {},
    "attributes": {
-    "items": {
+    "groups": {
       "type": "component",
       "repeatable": true,
-      "component": "molecules.submenu-item-3"
+      "component": "molecules.footer-group-items"
     }
   }
 }
