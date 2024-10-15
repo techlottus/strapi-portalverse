@@ -44,6 +44,11 @@
       "repeatable": false,
       "component": "shared.seo",
       "required": true
+    },
+    "layout": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::layout.layout"
     }
   }
 }
