@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_atoms_phones",
+  "info": {
+    "displayName": "phone"
+  },
+  "options": {},
+  "attributes": {
+    "phone": {
+      "type": "biginteger",
+      "required": true
+    },
+    "icon_name": {
+      "type": "string"
+    }
+  }
+}

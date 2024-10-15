@@ -13,6 +13,12 @@
       "type": "boolean",
       "default": false
     },
+    "phone": {
+      "displayName": "phone",
+      "type": "component",
+      "repeatable": false,
+      "component": "atoms.phone"
+    },
     "images": {
       "type": "media",
       "multiple": true,

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "social-media",
     "pluralName": "social-medias",
-    "displayName": "SocialMedia"
+    "displayName": "SocialMedia",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,14 +15,10 @@
     "name": {
       "type": "string"
     },
-    "icon": {
-      "allowedTypes": [
-        "images"
-      ],
-      "type": "media",
-      "multiple": false
-    },
     "href": {
+      "type": "string"
+    },
+    "icon_name": {
       "type": "string"
     }
   }

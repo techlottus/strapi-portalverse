@@ -14,7 +14,9 @@
   "attributes": {
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "unique": true,
+      "default": "Default"
     },
     "header": {
       "type": "relation",
@@ -27,10 +29,6 @@
       "relation": "manyToOne",
       "target": "api::footer.footer",
       "inversedBy": "layouts"
-    },
-    "default": {
-      "type": "boolean",
-      "default": false
     },
     "pages": {
       "type": "relation",
