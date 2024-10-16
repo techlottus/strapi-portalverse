@@ -1,17 +1,13 @@
 {
-  "collectionName": "components_molecules_submenu_item_3s",
+  "collectionName": "components_molecules_footer_group_items",
   "info": {
-    "displayName": "submenu_item_3",
+    "displayName": "footerGroupItems",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "label": {
+    "title": {
       "type": "string"
-    },
-    "bold": {
-      "type": "boolean",
-      "default": false
     },
     "href": {
       "type": "string"
@@ -23,6 +19,11 @@
         "_blank"
       ],
       "default": "_self"
+    },
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "molecules.submenu-item-3"
     }
   }
 }
